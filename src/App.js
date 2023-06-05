@@ -1,23 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import './components/Menu.js'
+import Menu from './components/Menu';
 
 function App() {
   return (
     <div className="App">
       <header className="header">
-      <p>Nav</p>
+      <p>Logo</p>
       </header>
       <nav className="main-nav">
-        <p>Nav</p>
+        <Menu />
       </nav>
       <section className="socials-nav">
-      <p>Nav</p>
+      <p>Socials</p>
       </section>
       <section className="Resume">
       <p>Resume</p>
       </section>
       <section className="portfolio">
-      <p>Resume</p>
+      <p>Portfolio</p>
       </section>
       <section className="work-with-me">
       <p>Work with</p>
