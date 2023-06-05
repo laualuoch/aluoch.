@@ -1,18 +1,23 @@
+import '../index.css'
+
 const MenuItem = ({section}) => {
     return (
-        <li>{section}</li>
+        <a href='#'
+        className='px-8'>
+      {section}
+    </a>
     )
 };
 
 const Menu = () => {
     return (
-        <ul className="inline listNone">
+        <nav className='flex px-4 space-x-8'>
             <MenuItem section= "HOME"/>
             <MenuItem section= "ABOUT"/>
             <MenuItem section= "RESUME"/>
             <MenuItem section= "PORTFOLIO"/>
             <MenuItem section= "HIRE ME"/>
-        </ul>
+        </nav>
     )
 }
 

@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import './index.css'
 import './App.css';
 import './components/Menu.js'
 import Menu from './components/Menu';
@@ -6,26 +7,29 @@ import Menu from './components/Menu';
 function App() {
   return (
     <div className="App">
-      <header className="header">
-      <p>Logo</p>
-      </header>
-      <nav className="main-nav">
-        <Menu />
-      </nav>
+      <div className='px-100'>
+        <div className=''>
+          <header className="header">
+          <div className=''>
+            <img className="object-fill h-32 w-40 hover:object-scale-down" src ={logo}/>
+          </div>
+          </header>
+        </div>
+
+        <div className=''>
+            <Menu />
+        </div>
+      </div>
+     
       <section className="socials-nav">
-      <p>Socials</p>
       </section>
       <section className="Resume">
-      <p>Resume</p>
       </section>
       <section className="portfolio">
-      <p>Portfolio</p>
       </section>
       <section className="work-with-me">
-      <p>Work with</p>
       </section>
       <footer className="footer">
-      <p>Footer</p>
       </footer>
     </div>
   );
