@@ -1,10 +1,12 @@
 import '../assets/main.css'
-import logo from '../logo.svg';
+import logo from '../images/logo.svg';
 
 const LogoItem = ({logoItem}) => {
     return (
         <div class="flex items-center flex-shrink-0 text-white mr-6">
-            <img class="mr-4 h-8 w-10 hover:object-scale-down" src ={logoItem}/>
+            <img class="mr-4 h-8 w-10 hover:object-scale-down" 
+            src ={logoItem}
+            alt='Aluoch Laurine Logo'/>
         </div>
     )
 };
