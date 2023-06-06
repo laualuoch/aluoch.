@@ -1,4 +1,4 @@
-import '../index.css'
+import './assets/main.css'
 import logo from '../logo.svg';
 
 const LogoItem = ({logoItem}) => {
@@ -23,14 +23,21 @@ const MenuItem = ({section}) => {
 const Menu = () => {
     return (
         <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
-           <LogoItem logoItem={logo} />
-            <MenuItem section= "HOME"/>
-            <MenuItem section= "ABOUT"/>
-            <MenuItem section= "RESUME"/>
-            <MenuItem section= "PORTFOLIO"/>
-            <MenuItem section= "HIRE ME"/>
-        </nav>
+            <div class="flex items-center flex-shrink-0 mr-6">
+               <LogoItem logoItem={logo} />
+            </div>
+
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <div class="text-sm lg:flex-grow">
+                    <MenuItem section= "HOME"/>
+                    <MenuItem section= "ABOUT"/>
+                    <MenuItem section= "RESUME"/>
+                    <MenuItem section= "PORTFOLIO"/>
+                    <MenuItem section= "HIRE ME"/>
+                </div>
+            </div>
+            </nav>
     )
-}
+};
 
 export default Menu;
