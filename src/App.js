@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './index.css'
 import './App.css';
 import './components/Menu.js'
@@ -7,20 +6,10 @@ import Menu from './components/Menu';
 function App() {
   return (
     <div className="App">
-      <div className='px-100'>
-        <div className=''>
-          <header className="header">
-          <div className=''>
-            <img className="object-fill h-32 w-40 hover:object-scale-down" src ={logo}/>
-          </div>
-          </header>
-        </div>
+      <header class="h-16 bg-white sticky top-0">
+        <Menu />
+      </header>
 
-        <div className=''>
-            <Menu />
-        </div>
-      </div>
-     
       <section className="socials-nav">
       </section>
       <section className="Resume">
