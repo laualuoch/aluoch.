@@ -3,8 +3,8 @@ import logo from '../images/logo.svg';
 
 const LogoItem = ({logoItem}) => {
     return (
-        <div class="flex items-center flex-shrink-0 text-white mr-6">
-            <img class="mr-4 h-8 w-10 hover:object-scale-down" 
+        <div className="flex items-center flex-shrink-0 pl-4">
+            <img class="h-8 w-10 hover:object-scale-down" 
             src ={logoItem}
             alt='Aluoch Laurine Logo'/>
         </div>
@@ -15,7 +15,7 @@ const MenuItem = ({section}) => {
     return (
         <a 
         href="#responsive-header" 
-        class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+        className="text-sm font-thin text-black pl-4 hover:bg-white hover "
         > 
             {section}
         </a>
@@ -24,13 +24,13 @@ const MenuItem = ({section}) => {
 
 const Menu = () => {
     return (
-        <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
-            <div class="flex items-center flex-shrink-0 mr-6">
-               <LogoItem logoItem={logo} />
+        <nav className="sticky p-8 top-0 z-50 bg-pink-100">
+            <div className="flex items-center flex-shrink-0 mr-6">
+            <LogoItem logoItem={logo} />
             </div>
 
-            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-                <div class="text-sm lg:flex-grow">
+            <div className="hidden md:block">
+                <div className="flex space-x-4 items-baseline">
                     <MenuItem section= "HOME"/>
                     <MenuItem section= "ABOUT"/>
                     <MenuItem section= "RESUME"/>
@@ -38,7 +38,7 @@ const Menu = () => {
                     <MenuItem section= "HIRE ME"/>
                 </div>
             </div>
-            </nav>
+        </nav>
     )
 };
 
