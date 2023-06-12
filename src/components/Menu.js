@@ -17,7 +17,7 @@ const MenuItem = ({section, href}) => {
     return (
         <a 
         href={href}
-        class="text-lg text-green py-4 px-2 border-green hover:text-pink font-regular"
+        class="text-lg text-green py-4 px-2 border-green hover:text-pink font-regular font-chilanka"
         > 
             {section}
         </a>
