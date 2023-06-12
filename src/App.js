@@ -4,20 +4,20 @@ import Menu from './components/Menu';
 
 function App() {
   return (
-    <div className="App">
+    <div class="App">
       <header>
         <Menu />
       </header>
 
-      <section className="socials-nav">
+      <section class="socials-nav">
       </section>
-      <section className="Resume">
+      <section class="Resume">
       </section>
-      <section className="portfolio">
+      <section class="portfolio">
       </section>
-      <section className="work-with-me">
+      <section class="work-with-me">
       </section>
-      <footer className="footer">
+      <footer class="footer">
       </footer>
     </div>
   );
