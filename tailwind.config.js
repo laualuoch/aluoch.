@@ -22,6 +22,7 @@ module.exports = {
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
+      chilanka: ['Chilanka']
     },
     extend: {
       spacing: {
