@@ -1,21 +1,23 @@
 import '../assets/main.css'
 import logo from '../images/logo.svg';
 
-const LogoItem = ({logoItem}) => {
+const LogoItem = ({logoItem, href}) => {
     return (
-        <div className="flex items-center flex-shrink-0 pl-4">
-            <img class="h-8 w-10 hover:object-scale-down" 
-            src ={logoItem}
-            alt='Aluoch Laurine Logo'/>
+        <div class="flex items-center flex-shrink-0 pl-4">
+            <a href={href}>
+                <img class="h-20 w-100 hover:object-scale-down"
+                src ={logoItem}
+                alt='Aluoch Laurine Logo'/>
+            </a>
         </div>
     )
 };
 
-const MenuItem = ({section}) => {
+const MenuItem = ({section, href}) => {
     return (
         <a 
-        href="#responsive-header" 
-        className="text-sm font-thin text-black pl-4 hover:bg-white hover "
+        href={href}
+        class="text-lg text-green py-4 px-2 border-green hover:text-pink font-regular"
         > 
             {section}
         </a>
@@ -24,18 +26,18 @@ const MenuItem = ({section}) => {
 
 const Menu = () => {
     return (
-        <nav className="sticky p-8 top-0 z-50 bg-pink-100">
-            <div className="flex items-center flex-shrink-0 mr-6">
-            <LogoItem logoItem={logo} />
-            </div>
+        <nav class="sticky p-4 top-0 z-50 shadow-sm">
+            <div class="flex flex-row justify-between items-center">
+                <div class="ml-16">
+                    <LogoItem logoItem={logo} href="#home" />
+                </div>
 
-            <div className="hidden md:block">
-                <div className="flex space-x-4 items-baseline">
-                    <MenuItem section= "HOME"/>
-                    <MenuItem section= "ABOUT"/>
-                    <MenuItem section= "RESUME"/>
-                    <MenuItem section= "PORTFOLIO"/>
-                    <MenuItem section= "HIRE ME"/>
+                <div class="mr-16" >
+                    <MenuItem section= "HOME" href="#home"/>
+                    <MenuItem section= "ABOUT" href="#about"/>
+                    <MenuItem section= "RESUME" href="#resume"/>
+                    <MenuItem section= "PORTFOLIO" href="#portfolio"/>
+                    <MenuItem section= "HIRE ME" href="#hire-me"/>
                 </div>
             </div>
         </nav>
