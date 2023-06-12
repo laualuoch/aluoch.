@@ -15,7 +15,7 @@ const MenuItem = ({section}) => {
     return (
         <a 
         href="#responsive-header" 
-        className="text-sm font-thin text-black pl-4 hover:bg-white hover "
+        className="text-sm font-thin text-green pl-4 hover:text-pink hover"
         > 
             {section}
         </a>
@@ -24,13 +24,13 @@ const MenuItem = ({section}) => {
 
 const Menu = () => {
     return (
-        <nav className="sticky p-8 top-0 z-50 bg-pink-100">
-            <div className="flex items-center flex-shrink-0 mr-6">
+        <nav class="sticky p-8 top-0 z-50 flex flex-row">
+            <div class="basis-1/4 items-center flex-shrink-0 mr-6">
             <LogoItem logoItem={logo} />
             </div>
 
-            <div className="hidden md:block">
-                <div className="flex space-x-4 items-baseline">
+            <div class="basis-3/4 shrink items-end md:block">
+                <div class="flex space-x-4 items-baseline">
                     <MenuItem section= "HOME"/>
                     <MenuItem section= "ABOUT"/>
                     <MenuItem section= "RESUME"/>
