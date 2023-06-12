@@ -24,24 +24,21 @@ const MenuItem = ({section, href}) => {
 
 const Menu = () => {
     return (
-        <>
-            <nav class="flex flex-row sticky p-8 top-0 z-50 shadow-lg">
-                <div class="basis-1/4 items-center flex-shrink-0 mr-6">
+        <nav class="sticky p-4 top-0 z-50 shadow-sm">
+            <div class="flex flex-row justify-between">
+                <div class="ml-16">
                     <LogoItem logoItem={logo} />
                 </div>
 
-                <div class="basis-3/4 shrink items-end md:block">
-                    <div class="flex space-x-4 items-baseline">
-                        <MenuItem section= "HOME" href="#home"/>
-                        <MenuItem section= "ABOUT" href="#about"/>
-                        <MenuItem section= "RESUME" href="#resume"/>
-                        <MenuItem section= "PORTFOLIO" href="#portfolio"/>
-                        <MenuItem section= "HIRE ME" href="#hire-me"/>
-                    </div>
+                <div class="mr-16" >
+                    <MenuItem section= "HOME" href="#home"/>
+                    <MenuItem section= "ABOUT" href="#about"/>
+                    <MenuItem section= "RESUME" href="#resume"/>
+                    <MenuItem section= "PORTFOLIO" href="#portfolio"/>
+                    <MenuItem section= "HIRE ME" href="#hire-me"/>
                 </div>
-            </nav>
-        </>
-        
+            </div>
+        </nav>
     )
 };
 
