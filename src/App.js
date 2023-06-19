@@ -1,6 +1,7 @@
 import React from "react";
 import './assets/main.css'
 import Menu from './components/Menu';
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <section class="work-with-me">
       </section>
       <footer class="footer">
+        <Footer />
       </footer>
     </div>
   );
