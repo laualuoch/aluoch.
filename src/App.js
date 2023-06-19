@@ -2,6 +2,7 @@ import React from "react";
 import './assets/main.css'
 import Menu from './components/Menu';
 import Footer from './components/Footer'
+import Home from './components/Home'
 
 function App() {
   return (
@@ -9,6 +10,10 @@ function App() {
       <header>
         <Menu />
       </header>
+
+      <section>
+        <Home />
+      </section>
 
       <section class="socials-nav">
       </section>
