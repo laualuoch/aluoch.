@@ -4,6 +4,12 @@ import Menu from './components/Menu';
 import Footer from './components/Footer'
 import Home from './components/Home'
 
+const getCurrentYear = () => {
+  let year= new Date().getFullYear(); 
+  return year;
+
+}
+
 function App() {
   return (
     <div class="App">
@@ -24,7 +30,7 @@ function App() {
       <section class="work-with-me">
       </section>
       <footer class="footer">
-        <Footer />
+        <Footer currentYear={getCurrentYear()} />
       </footer>
     </div>
   );
