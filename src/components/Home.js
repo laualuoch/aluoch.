@@ -16,11 +16,11 @@ const HomeItems = () => {
     return (
         <div class="flex flex-row justify-between items-center gap-2 pl-20 pr-20 pt-10 pb-10">
         <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt="" />
+            <img class="border-double border-4 border-green hover:border-pink p-20 h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt="" />
         </div>
 
         <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="" />
+            <img class="border-double border-4 border-green hover:border-pink p-20 h-auto max-w-full rounded-lg"  src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="" />
         </div>
     </div>
     )
