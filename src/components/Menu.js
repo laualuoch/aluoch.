@@ -33,11 +33,7 @@ const Menu = () => {
                 </div>
 
                 <div class="mr-16" >
-                    <MenuItem section= "HOME" href="#home"/>
-                    <MenuItem section= "ABOUT" href="#about"/>
-                    <MenuItem section= "RESUME" href="#resume"/>
-                    <MenuItem section= "PORTFOLIO" href="#portfolio"/>
-                    <MenuItem section= "HIRE ME" href="#hire-me"/>
+                    <MenuItem section= "HIRE ME!" href="#hire-me"/>
                 </div>
             </div>
         </nav>
