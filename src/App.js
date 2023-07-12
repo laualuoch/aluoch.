@@ -1,5 +1,6 @@
 import React from "react";
 import './assets/main.css'
+
 import Menu from './components/Menu';
 import Footer from './components/Footer'
 import Home from './components/Home'
@@ -10,7 +11,7 @@ import Writing from './components/Writing'
 import {
   BrowserRouter,
   Routes,
-  Route,
+  Route
 } from "react-router-dom";
 
 const getCurrentYear = () => {
@@ -31,10 +32,9 @@ function App() {
         <div class="Section">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/software" element={<Software />} />
-            <Route path="/design" element={<Design />} />
-            <Route path="/writing" element={<Writing />} />
-            <Route path="*" element={<PageNotFound />} />
+            <Route path="/engineering-portfolio" element={<Software />} />
+            <Route path="/design-portfolio" element={<Design />} />
+            <Route path="/writing-portfolio" element={<Writing />} />
           </Routes>
         </div>
         </section>
