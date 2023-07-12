@@ -1,8 +1,18 @@
 import React from "react";
 import './assets/main.css'
+
 import Menu from './components/Menu';
 import Footer from './components/Footer'
 import Home from './components/Home'
+import Software from './components/Software'
+import Design from './components/Design'
+import Writing from './components/Writing'
+
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
 
 const getCurrentYear = () => {
   let year= new Date().getFullYear(); 
@@ -12,26 +22,29 @@ const getCurrentYear = () => {
 
 function App() {
   return (
-    <div class="App">
-      <header>
-        <Menu />
-      </header>
+    <div class="App">  
+     <BrowserRouter> 
+        <header>
+          <Menu />
+        </header>
 
-      <section>
-        <Home />
-      </section>
+        <section>
+        <div class="Section">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/engineering-portfolio" element={<Software />} />
+            <Route path="/design-portfolio" element={<Design />} />
+            <Route path="/writing-portfolio" element={<Writing />} />
+          </Routes>
+        </div>
+        </section>
 
-      <section class="socials-nav">
-      </section>
-      <section class="Resume">
-      </section>
-      <section class="portfolio">
-      </section>
-      <section class="work-with-me">
-      </section>
-      <footer class="footer">
-        <Footer currentYear={getCurrentYear()} />
-      </footer>
+        <section class="work-with-me">
+        </section>
+        <footer class="footer">
+          <Footer currentYear={getCurrentYear()} />
+        </footer>
+      </BrowserRouter>
     </div>
   );
 }

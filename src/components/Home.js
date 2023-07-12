@@ -1,4 +1,15 @@
 
+const engineeringPortfolio = () => {
+    //
+}
+
+const designPortfolio = () => {
+    //
+}
+
+const writingPortfolio = () => {
+    //
+}
 
 const Hamburger = () => {
     return (
@@ -19,8 +30,10 @@ const HomeItems = () => {
                 <div class="bg-[url(https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg)] h-[400px] w-[400px] relative">
                     <div class="absolute bottom-0 px-4 py-3 bg-cream w-full">
                         <h1 class="text-white font-regular font-chilanka font-semibold text-4xl">Software Engineer</h1>
-                        <button class="bg-green hover:bg-pink text-white font-regular font-chilanka py-2 px-4 border border-blue-700 rounded">
-                            View projects
+                        <button 
+                        class="bg-green hover:bg-pink text-white font-regular font-chilanka py-2 px-4 border border-blue-700 rounded"
+                        onClick={engineeringPortfolio}>
+                            View Portfolio
                         </button>
                     </div>
                 </div>
@@ -29,8 +42,10 @@ const HomeItems = () => {
                 <div class="bg-[url(https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg)] h-[400px] w-[400px] relative">
                     <div class="absolute items-center bottom-0 px-4 py-3 bg-beige w-full">
                         <h1 class="text-white font-regular font-chilanka font-semibold text-4xl">Product Designer</h1>
-                        <button class="bg-green hover:bg-pink text-white font-regular font-chilanka py-2 px-4 border border-blue-700 rounded">
-                            View projects
+                        <button 
+                        class="bg-green hover:bg-pink text-white font-regular font-chilanka py-2 px-4 border border-blue-700 rounded"
+                        onClick={designPortfolio}>
+                            View Portfolio
                         </button>
                     </div>
                 </div>
@@ -39,8 +54,10 @@ const HomeItems = () => {
                 <div class="bg-[url(https://flowbite.s3.amazonaws.com/docs/gallery/square/image-8.jpg)] h-[400px] w-[400px] relative">
                     <div class="absolute bottom-0 px-4 py-3 bg-jungle w-full">
                         <h1 class="text-white font-regular font-chilanka font-semibold text-4xl">Tech Trainer</h1>
-                        <button class="bg-green hover:bg-pink text-white font-regular font-chilanka py-2 px-4 border border-blue-700 rounded">
-                            View projects
+                        <button 
+                        class="bg-green hover:bg-pink text-white font-regular font-chilanka py-2 px-4 border border-blue-700 rounded"
+                        onClick={writingPortfolio}>
+                            Visit Blog
                         </button>
                     </div>
                 </div>
