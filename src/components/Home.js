@@ -1,4 +1,4 @@
-import { Router, Route, useNavigate } from "react-router-dom";
+import { Route, useNavigate, Router} from "react-router-dom";
 import Software from "./Software";
 import Design from "./Design";
 import Writing from "./Writing";
@@ -17,10 +17,6 @@ const Hamburger = () => {
 
 const HomeItems = () => {
     const navigate = useNavigate();
-
-    const navigateToHome = () => {
-        navigate('/');
-    }
 
     const navigateToEngineering = () => {
         navigate('/engineering-portfolio');
