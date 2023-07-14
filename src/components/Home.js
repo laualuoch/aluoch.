@@ -1,4 +1,4 @@
-import { Route, useNavigate, Router} from "react-router-dom";
+import { Routes, Route, useNavigate} from "react-router-dom";
 import Software from "./Software";
 import Design from "./Design";
 import Writing from "./Writing";
@@ -31,7 +31,6 @@ const HomeItems = () => {
     }
 
     return (
-        <Router>
             <div class="flex flex-row justify-between items-center gap-2 pl-20 pr-20 pt-10 pb-10">
                 <div class="border-double border-4 border-green hover:border-pink p-20 h-auto max-w-full rounded-lg" >
                     <div class="bg-[url(https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg)] h-[400px] w-[400px] relative">
@@ -42,7 +41,6 @@ const HomeItems = () => {
                             onClick={navigateToEngineering}>
                                 View Portfolio
                             </button>
-                            <Route path="/engineering-portfolio" element={<Software />} />
                         </div>
                     </div>
                 </div>
@@ -55,7 +53,6 @@ const HomeItems = () => {
                             onClick={navigateToDesign}>
                                 View Portfolio
                             </button>
-                            <Route path="/design-portfolio" element={<Design />} />
                         </div>
                     </div>
                 </div>
@@ -68,12 +65,10 @@ const HomeItems = () => {
                             onClick={navigateToWriting}>
                                 Visit Blog
                             </button>
-                            <Route path="/writing-portfolio" element={<Writing />} />
                         </div>
                     </div>
                 </div>
             </div>
-        </Router>
     )
 };
 

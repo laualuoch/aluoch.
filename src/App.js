@@ -23,12 +23,11 @@ const getCurrentYear = () => {
 function App() {
   return (
     <div class="App">  
-     <BrowserRouter> 
-        <header>
-          <Menu />
-        </header>
+      <header>
+        <Menu />
+      </header>
 
-        <section>
+      <section>
         <div class="Section">
           <Routes>
             <Route path="/" element={<Home />} />
@@ -37,14 +36,14 @@ function App() {
             <Route path="/writing-portfolio" element={<Writing />} />
           </Routes>
         </div>
-        </section>
+      </section>
 
-        <section class="work-with-me">
-        </section>
-        <footer class="footer">
-          <Footer currentYear={getCurrentYear()} />
-        </footer>
-      </BrowserRouter>
+      <section class="work-with-me">
+      </section>
+      
+      <footer class="footer">
+        <Footer currentYear={getCurrentYear()} />
+      </footer>
     </div>
   );
 }
