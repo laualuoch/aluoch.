@@ -1,14 +1,21 @@
+import { Routes, Route, useNavigate} from "react-router-dom";
 
-const engineeringPortfolio = () => {
-    //
+const navigate = useNavigate();
+
+const navigateToHome = () => {
+    navigate('/');
 }
 
-const designPortfolio = () => {
-    //
+const navigateToEngineering = () => {
+    navigate('/engineering-portfolio');
 }
 
-const writingPortfolio = () => {
-    //
+const navigateToDesign = () => {
+    navigate('/design-portfolio');
+}
+
+const navigateToWriting = () => {
+    navigate('/writing-portfolio')
 }
 
 const Hamburger = () => {
@@ -20,8 +27,8 @@ const Hamburger = () => {
                 </a>
             </ol>
         </nav>
-    )
-};
+    );
+}
 
 const HomeItems = () => {
     return (
@@ -32,7 +39,7 @@ const HomeItems = () => {
                         <h1 class="text-white font-regular font-chilanka font-semibold text-4xl">Software Engineer</h1>
                         <button 
                         class="bg-green hover:bg-pink text-white font-regular font-chilanka py-2 px-4 border border-blue-700 rounded"
-                        onClick={engineeringPortfolio}>
+                        onClick={navigateToEngineering}>
                             View Portfolio
                         </button>
                     </div>
@@ -44,7 +51,7 @@ const HomeItems = () => {
                         <h1 class="text-white font-regular font-chilanka font-semibold text-4xl">Product Designer</h1>
                         <button 
                         class="bg-green hover:bg-pink text-white font-regular font-chilanka py-2 px-4 border border-blue-700 rounded"
-                        onClick={designPortfolio}>
+                        onClick={navigateToDesign}>
                             View Portfolio
                         </button>
                     </div>
@@ -56,7 +63,7 @@ const HomeItems = () => {
                         <h1 class="text-white font-regular font-chilanka font-semibold text-4xl">Tech Trainer</h1>
                         <button 
                         class="bg-green hover:bg-pink text-white font-regular font-chilanka py-2 px-4 border border-blue-700 rounded"
-                        onClick={writingPortfolio}>
+                        onClick={navigateToWriting}>
                             Visit Blog
                         </button>
                     </div>
