@@ -1,15 +1,7 @@
-
-const engineeringPortfolio = () => {
-    //
-}
-
-const designPortfolio = () => {
-    //
-}
-
-const writingPortfolio = () => {
-    //
-}
+import { Routes, Route, useNavigate} from "react-router-dom";
+import Software from "./Software";
+import Design from "./Design";
+import Writing from "./Writing";
 
 const Hamburger = () => {
     return (
@@ -20,49 +12,69 @@ const Hamburger = () => {
                 </a>
             </ol>
         </nav>
-    )
-};
+    );
+}
 
 const HomeItems = () => {
+    const navigate = useNavigate();
+
+    const navigateToEngineering = () => {
+        navigate('/engineering-portfolio');
+    }
+
+    const navigateToDesign = () => {
+        navigate('/design-portfolio');
+    }
+
+    const navigateToWriting = () => {
+        navigate('/writing-portfolio')
+    }
+
     return (
-        <div class="flex flex-row justify-between items-center gap-2 pl-20 pr-20 pt-10 pb-10">
-            <div class="border-double border-4 border-green hover:border-pink p-20 h-auto max-w-full rounded-lg" >
-                <div class="bg-[url(https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg)] h-[400px] w-[400px] relative">
-                    <div class="absolute bottom-0 px-4 py-3 bg-cream w-full">
-                        <h1 class="text-white font-regular font-chilanka font-semibold text-4xl">Software Engineer</h1>
-                        <button 
-                        class="bg-green hover:bg-pink text-white font-regular font-chilanka py-2 px-4 border border-blue-700 rounded"
-                        onClick={engineeringPortfolio}>
-                            View Portfolio
-                        </button>
+        
+            <div class="flex flex-row justify-between items-center gap-2 pl-20 pr-20 pt-10 pb-10">
+                <div class="border-double border-4 border-green hover:border-pink p-20 h-auto max-w-full rounded-lg" >
+                    <div class="bg-[url(https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg)] h-[400px] w-[400px] relative">
+                        <div class="absolute bottom-0 px-4 py-3 bg-cream w-full">
+                            <h1 class="text-white font-regular font-chilanka font-semibold text-4xl">Software Engineer</h1>
+                            <button 
+                            class="bg-green hover:bg-pink text-white font-regular font-chilanka py-2 px-4 border border-blue-700 rounded"
+                            onClick={navigateToEngineering}>
+                                View Portfolio
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="border-double border-4 border-green hover:border-pink p-20 h-auto max-w-full rounded-lg" >
-                <div class="bg-[url(https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg)] h-[400px] w-[400px] relative">
-                    <div class="absolute items-center bottom-0 px-4 py-3 bg-beige w-full">
-                        <h1 class="text-white font-regular font-chilanka font-semibold text-4xl">Product Designer</h1>
-                        <button 
-                        class="bg-green hover:bg-pink text-white font-regular font-chilanka py-2 px-4 border border-blue-700 rounded"
-                        onClick={designPortfolio}>
-                            View Portfolio
-                        </button>
+                <div class="border-double border-4 border-green hover:border-pink p-20 h-auto max-w-full rounded-lg" >
+                    <div class="bg-[url(https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg)] h-[400px] w-[400px] relative">
+                        <div class="absolute items-center bottom-0 px-4 py-3 bg-beige w-full">
+                            <h1 class="text-white font-regular font-chilanka font-semibold text-4xl">Product Designer</h1>
+                            <button 
+                            class="bg-green hover:bg-pink text-white font-regular font-chilanka py-2 px-4 border border-blue-700 rounded"
+                            onClick={navigateToDesign}>
+                                View Portfolio
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="border-double border-4 border-green hover:border-pink p-20 h-auto max-w-full rounded-lg" >
-                <div class="bg-[url(https://flowbite.s3.amazonaws.com/docs/gallery/square/image-8.jpg)] h-[400px] w-[400px] relative">
-                    <div class="absolute bottom-0 px-4 py-3 bg-jungle w-full">
-                        <h1 class="text-white font-regular font-chilanka font-semibold text-4xl">Tech Trainer</h1>
-                        <button 
-                        class="bg-green hover:bg-pink text-white font-regular font-chilanka py-2 px-4 border border-blue-700 rounded"
-                        onClick={writingPortfolio}>
-                            Visit Blog
-                        </button>
+                <div class="border-double border-4 border-green hover:border-pink p-20 h-auto max-w-full rounded-lg" >
+                    <div class="bg-[url(https://flowbite.s3.amazonaws.com/docs/gallery/square/image-8.jpg)] h-[400px] w-[400px] relative">
+                        <div class="absolute bottom-0 px-4 py-3 bg-jungle w-full">
+                            <h1 class="text-white font-regular font-chilanka font-semibold text-4xl">Tech Trainer</h1>
+                            <button 
+                            class="bg-green hover:bg-pink text-white font-regular font-chilanka py-2 px-4 border border-blue-700 rounded"
+                            onClick={navigateToWriting}>
+                                Visit Blog
+                            </button>
+                        </div>
                     </div>
                 </div>
+                <Routes>
+                    <Route path="/engineering-portfolio" element={<Software />} />
+                    <Route path="/design-portfolio" element={<Design />} />
+                    <Route path="/writing-portfolio" element={<Writing />} />
+                </Routes>
             </div>
-        </div>
     )
 };
 

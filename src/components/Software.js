@@ -1,6 +1,3 @@
-import '../assets/main.css'
-import logo from '../images/logo.svg';
-
 const Hamburger = () => {
     return (
         <nav class="flex pl-20 pr-20 text-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700" aria-label="Breadcrumb">
