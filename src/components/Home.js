@@ -31,6 +31,7 @@ const HomeItems = () => {
     }
 
     return (
+        
             <div class="flex flex-row justify-between items-center gap-2 pl-20 pr-20 pt-10 pb-10">
                 <div class="border-double border-4 border-green hover:border-pink p-20 h-auto max-w-full rounded-lg" >
                     <div class="bg-[url(https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg)] h-[400px] w-[400px] relative">
@@ -41,9 +42,6 @@ const HomeItems = () => {
                             onClick={navigateToEngineering}>
                                 View Portfolio
                             </button>
-                            <Routes>
-                                <Route path="/engineering-portfolio" element={<Software />} />
-                            </Routes>
                         </div>
                     </div>
                 </div>
@@ -56,9 +54,6 @@ const HomeItems = () => {
                             onClick={navigateToDesign}>
                                 View Portfolio
                             </button>
-                            <Routes>
-                                <Route path="/design-portfolio" element={<Design />} />
-                            </Routes>
                         </div>
                     </div>
                 </div>
@@ -71,12 +66,14 @@ const HomeItems = () => {
                             onClick={navigateToWriting}>
                                 Visit Blog
                             </button>
-                            <Routes>
-                                <Route path="/writing-portfolio" element={<Writing />} />
-                            </Routes>
                         </div>
                     </div>
                 </div>
+                <Routes>
+                    <Route path="/engineering-portfolio" element={<Software />} />
+                    <Route path="/design-portfolio" element={<Design />} />
+                    <Route path="/writing-portfolio" element={<Writing />} />
+                </Routes>
             </div>
     )
 };
