@@ -41,6 +41,9 @@ const HomeItems = () => {
                             onClick={navigateToEngineering}>
                                 View Portfolio
                             </button>
+                            <Routes>
+                                <Route path="/engineering-portfolio" element={<Software />} />
+                            </Routes>
                         </div>
                     </div>
                 </div>
@@ -53,6 +56,9 @@ const HomeItems = () => {
                             onClick={navigateToDesign}>
                                 View Portfolio
                             </button>
+                            <Routes>
+                                <Route path="/design-portfolio" element={<Design />} />
+                            </Routes>
                         </div>
                     </div>
                 </div>
@@ -65,6 +71,9 @@ const HomeItems = () => {
                             onClick={navigateToWriting}>
                                 Visit Blog
                             </button>
+                            <Routes>
+                                <Route path="/writing-portfolio" element={<Writing />} />
+                            </Routes>
                         </div>
                     </div>
                 </div>

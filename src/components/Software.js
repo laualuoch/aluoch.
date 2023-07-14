@@ -1,5 +1,4 @@
 import '../assets/main.css'
-import logo from '../images/logo.svg';
 
 const Hamburger = () => {
     return (
