@@ -69,11 +69,6 @@ const HomeItems = () => {
                         </div>
                     </div>
                 </div>
-                <Routes>
-                    <Route path="/engineering-portfolio" element={<Software />} />
-                    <Route path="/design-portfolio" element={<Design />} />
-                    <Route path="/writing-portfolio" element={<Writing />} />
-                </Routes>
             </div>
     )
 };
