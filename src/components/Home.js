@@ -1,9 +1,5 @@
-import { Routes, Route, useNavigate} from "react-router-dom";
-import Software from "./Software";
-import Design from "./Design";
-import Writing from "./Writing";
+import { useNavigate} from "react-router-dom";
 import RoleTab from "./RoleTab";
-/* eslint-disable */
 
 const Hamburger = () => {
     return (
@@ -39,18 +35,18 @@ const HomeItems = () => {
     ];
     
 
-    return (        
-            <div class="flex flex-row justify-between items-center gap-2 pl-20 pr-20 pt-10 pb-10">
-                {userRoles.map(({role, navigationAction, buttonText}) => {
-                    return (
-                        <RoleTab
-                            userRole ={role}
-                            onClickButton={navigationAction}
-                            buttonText={buttonText}
-                        />
-                    );
-                })}
-            </div>
+    return (
+        <div class="flex flex-row justify-between items-center gap-2 pl-20 pr-20 pt-10 pb-10">
+            {userRoles.map(({role, navigationAction, buttonText}) => {
+                return (
+                    <RoleTab
+                        userRole ={role}
+                        onClickButton={navigationAction}
+                        buttonText={buttonText}
+                    />
+                );
+            })}
+        </div>
     );
 };
 
