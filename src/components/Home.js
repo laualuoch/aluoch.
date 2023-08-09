@@ -33,10 +33,11 @@ const HomeItems = () => {
     }
 
     const userRoles = [
-        {role:"Software Engineer", navigationAction:(() =>{navigateToEngineering}), buttonText: "View Portfolio"},
-        {role:"Product Designer", navigationAction:(() => {navigateToDesign} ), buttonText: "View Portfolio"},
-        {role:"Tech Writer", navigationAction:(() => {navigateToWriting}), buttonText: "Visit Blog"},
+        {role:"Software Engineer", navigationAction:navigateToEngineering, buttonText: "View Portfolio"},
+        {role:"Product Designer", navigationAction:navigateToDesign, buttonText: "View Portfolio"},
+        {role:"Tech Writer", navigationAction: navigateToWriting, buttonText: "Visit Blog"},
     ];
+    
 
     return (        
             <div class="flex flex-row justify-between items-center gap-2 pl-20 pr-20 pt-10 pb-10">
