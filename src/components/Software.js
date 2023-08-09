@@ -1,4 +1,7 @@
+import { Link, useNavigate } from "react-router-dom";
+
 const Hamburger = () => {
+    const navigate = useNavigate();
     return (
         <nav class="flex pl-20 pr-20 text-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700" aria-label="Breadcrumb">
             <ol class="inline-flex items-center space-x-1 md:space-x-3">
@@ -17,7 +20,7 @@ const Hamburger = () => {
 const SoftwareItems = () => {
     return (
         <div
-        id="carouselExampleControls"
+        id="software-engineering"
         class="relative"
         data-te-carousel-init
         data-te-carousel-slide>
@@ -26,18 +29,35 @@ const SoftwareItems = () => {
                 class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
                 data-te-carousel-item
                 data-te-carousel-active>
-                <img
-                    src="https://mdbcdn.b-cdn.net/img/new/slides/007.webp"
-                    class="block w-full"
-                    alt="Wild Landscape" />
-                <div
-                    class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-                    <h5 class="text-xl">DairyYetu</h5>
-                    <button class="bg-green hover:bg-pink text-white font-regular font-chilanka py-2 px-4 border border-blue-700 rounded">
-                            See More..
-                    </button>
+                    <div class= "col-span-3">
+                        <img
+                            src="https://mdbcdn.b-cdn.net/img/new/slides/007.webp"
+                            class="block w-full"
+                            alt="Wild Landscape" />
+                        <div
+                            class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
+                            <h5 class="text-xl">DairyYetu</h5>
+                            <button class="bg-green hover:bg-pink text-white font-regular font-chilanka py-2 px-4 border border-blue-700 rounded">
+                                    See More..
+                            </button>
+                        </div>
+                    </div>
+                    <div class= "col-span-1">
+                        <img
+                            src="https://mdbcdn.b-cdn.net/img/new/slides/007.webp"
+                            class="block w-full"
+                            alt="Wild Landscape" />
+                        <div
+                            class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
+                            <h5 class="text-xl">DairyYetu</h5>
+                            <button class="bg-green hover:bg-pink text-white font-regular font-chilanka py-2 px-4 border border-blue-700 rounded">
+                                    See More..
+                            </button>
+                        </div>
+
+                    </div>
+                    
                 </div>
-            </div>
             <div
             class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
             data-te-carousel-item>
