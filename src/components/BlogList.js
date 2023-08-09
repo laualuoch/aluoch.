@@ -1,26 +1,12 @@
-const Hamburger = () => {
-    return (
-        <nav class="flex pl-20 pr-20 text-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700" aria-label="Breadcrumb">
-            <ol class="inline-flex items-center space-x-1 md:space-x-3">
-                <a href="#" class="inline-flex items-center text-lg text-green py-4 px-2 border-green hover:text-pink font-regular font-chilanka sm:text-center dark:text-gray-400">
-                    HOME
-                </a>
-                <a href="#" class="inline-flex items-center text-lg text-green py-4 px-2 border-green hover:text-pink font-regular font-chilanka sm:text-center dark:text-gray-400">
-                    BLOG
-                </a>
-            </ol>
-        </nav>
-    )
-};
 
 
-const ArticleItems = () => {
+const BlogList = () => {
     return (
         <section class="bg-white dark:bg-gray-900">
   <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
       <div class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
-          <h2 class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Blog</h2>
-          <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">Unveiling the Binary Muse: Where Code and Words Converge, Exploring the Tech World One Line at a Time.</p>
+          <h2 class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Our Blog</h2>
+          <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">We use an agile approach to test assumptions and connect with the needs of your audience early and often.</p>
       </div> 
       <div class="grid gap-8 lg:grid-cols-2">
           <article class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
@@ -73,16 +59,6 @@ const ArticleItems = () => {
   </div>
 </section>
     );
-};
+}
 
-const Writing = () => {
-    return (
-        <>
-        <Hamburger />
-        <ArticleItems />
-        </>
-    )
-
-};
-
-export default Writing;
+export default BlogList;

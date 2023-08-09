@@ -3,6 +3,7 @@ import Software from "./Software";
 import Design from "./Design";
 import Writing from "./Writing";
 import RoleTab from "./RoleTab";
+/* eslint-disable */
 
 const Hamburger = () => {
     return (
@@ -32,9 +33,9 @@ const HomeItems = () => {
     }
 
     const userRoles = [
-        {role:"Software Engineer", navigationAction:{navigateToEngineering}, buttonText: "View Portfolio"},
-        {role:"Product Designer", navigationAction:{navigateToDesign}, buttonText: "View Portfolio"},
-        {role:"Tech Writer", navigationAction:{navigateToWriting}, buttonText: "Visit Blog"},
+        {role:"Software Engineer", navigationAction:(() =>{navigateToEngineering}), buttonText: "View Portfolio"},
+        {role:"Product Designer", navigationAction:(() => {navigateToDesign} ), buttonText: "View Portfolio"},
+        {role:"Tech Writer", navigationAction:(() => {navigateToWriting}), buttonText: "Visit Blog"},
     ];
 
     return (        
