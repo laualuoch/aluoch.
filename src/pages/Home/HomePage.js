@@ -1,21 +1,37 @@
 import { useNavigate} from "react-router-dom";
 import HomeRoleItem from "./HomeRoleItem";
+import HamburgerLink from "../../components/HamburgerLink";
 
-const Hamburger = () => {
+const HamburgerItems = () => {
+    const navigate = useNavigate();
+
+    const navigateToHome = () => {
+        navigate('/');
+    }
+    const navItems = [
+        {link:"HOME", linkOnClick: navigateToHome},
+        {item:"HOME", linkOnClick: navigateToHome}
+    ];
+
     return (
-        <nav class="flex pl-20 pr-20 text-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700" aria-label="Breadcrumb">
+        <nav className="flex pl-20 pr-20 text-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700" aria-label="Breadcrumb">
             <ol class="inline-flex items-center space-x-1 md:space-x-3">
-                <a href="#" class="inline-flex items-center text-lg text-green py-4 px-2 border-green hover:text-pink font-regular font-chilanka sm:text-center dark:text-gray-400">
-                    HOME
-                </a>
+                {navItems.map(({link, linkOnClick}) => {
+                    return (
+                        <HamburgerLink
+                            item={link}
+                            itemOnClick={linkOnClick}
+                        />
+                    );
+                })}
             </ol>
         </nav>
-    );
+    )
 }
 
 const HomeItems = () => {
     const navigate = useNavigate();
-
+    
     const navigateToEngineering = () => {
         navigate('/engineering-portfolio');
     }
@@ -33,7 +49,6 @@ const HomeItems = () => {
         {role:"Product Designer", navigationAction:navigateToDesign, buttonText: "View Portfolio"},
         {role:"Tech Writer", navigationAction: navigateToWriting, buttonText: "Visit Blog"},
     ];
-    
 
     return (
         <div class="flex flex-row justify-between items-center gap-2 pl-20 pr-20 pt-10 pb-10">
@@ -51,9 +66,11 @@ const HomeItems = () => {
 };
 
 const HomePage = () => {
+    
+
     return (
         <>
-        <Hamburger />
+        <HamburgerItems />
         <HomeItems />
         </>
     )
