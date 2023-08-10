@@ -1,5 +1,5 @@
 
-const RoleTab = ({ userRole, onClickButton, buttonText }) => {
+const HomeRoleItem = ({ userRole, onClickButton, buttonText }) => {
     return (
         <div class="border-double border-4 border-green hover:border-pink p-20 h-auto max-w-full rounded-lg" >
             <div class="bg-[url(https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg)] h-[400px] w-[400px] relative">
@@ -16,4 +16,4 @@ const RoleTab = ({ userRole, onClickButton, buttonText }) => {
     );
 }
 
-export default RoleTab;
+export default HomeRoleItem;
