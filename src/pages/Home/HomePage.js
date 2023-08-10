@@ -9,8 +9,7 @@ const HamburgerItems = () => {
         navigate('/');
     }
     const navItems = [
-        {link:"HOME", linkOnClick: navigateToHome},
-        {item:"HOME", linkOnClick: navigateToHome}
+        {link:"HOME", linkOnClick: navigateToHome}
     ];
 
     return (
@@ -66,8 +65,6 @@ const HomeItems = () => {
 };
 
 const HomePage = () => {
-    
-
     return (
         <>
         <HamburgerItems />
