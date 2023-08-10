@@ -25,7 +25,7 @@ const HomeItems = () => {
     ];
 
     return (
-        <div class="flex flex-row justify-between items-center gap-2 pl-20 pr-20 pt-10 pb-10">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-2 p-2 md:p-10 lg:pl-20 lg:pr-20 pt-5 md:pt-10 pb-5 md:pb-10">
             {userRoles.map(({role, navigationAction, buttonText}) => {
                 return (
                     <HomeRoleItem
