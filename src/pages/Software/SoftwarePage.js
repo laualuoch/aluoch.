@@ -143,7 +143,7 @@ const SoftwareItems = () => {
     )
 };
 
-const Software = () => {
+const SoftwarePage = () => {
     return (
         <>
         <Hamburger />
@@ -153,4 +153,4 @@ const Software = () => {
 
 };
 
-export default Software;
+export default SoftwarePage;

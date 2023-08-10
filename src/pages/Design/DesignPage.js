@@ -69,7 +69,7 @@ const DesignCarousel = () => {
         </div>
     );
 }
-const Design = () => {
+const DesignPage = () => {
     return (
         <>
         <Hamburger />
@@ -78,4 +78,4 @@ const Design = () => {
     );
 }
 
-export default Design;
+export default DesignPage;

@@ -4,9 +4,9 @@ import { createRoot } from 'react-dom/client';
 import { Routes, Route, BrowserRouter as Router} from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 import App from './App';
-import Software from "./components/Software";
-import Design from "./components/Design";
-import Writing from "./components/Writing";
+import SoftwarePage from './pages/Software/SoftwarePage';
+import DesignPage from './pages/Design/DesignPage';
+import BlogPage from './pages/Blog/BlogPage';
 import './assets/main.css';
 
 const rootElement = document.getElementById('root');
@@ -17,9 +17,9 @@ root.render(
     <Router>
       <Routes>
           <Route path="/" element={ <App /> } />
-          <Route path="/engineering-portfolio" element={<Software />} />
-          <Route path="/design-portfolio" element={<Design />} />
-          <Route path="/writing-portfolio" element={<Writing />} />
+          <Route path="/engineering-portfolio" element={<SoftwarePage />} />
+          <Route path="/design-portfolio" element={<DesignPage />} />
+          <Route path="/writing-portfolio" element={<BlogPage />} />
         </Routes>
     </Router>
   </StrictMode>

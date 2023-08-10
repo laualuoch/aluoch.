@@ -3,10 +3,10 @@ import './assets/main.css'
 
 import Menu from './components/Menu';
 import Footer from './components/Footer'
-import Home from './components/Home'
-import Software from './components/Software'
-import Design from './components/Design'
-import Writing from './components/Writing'
+import HomePage from "./pages/Home/HomePage";
+import SoftwarePage from "./pages/Software/SoftwarePage";
+import DesignPage from "./pages/Design/DesignPage";
+import BlogPage from "./pages/Blog/BlogPage";
 
 import {
   BrowserRouter,
@@ -30,10 +30,10 @@ function App() {
       <section>
         <div class="Section">
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/engineering-portfolio" element={<Software />} />
-            <Route path="/design-portfolio" element={<Design />} />
-            <Route path="/writing-portfolio" element={<Writing />} />
+            <Route path="/" element={<HomePage />} />
+            <Route path="/engineering-portfolio" element={<SoftwarePage />} />
+            <Route path="/design-portfolio" element={<DesignPage />} />
+            <Route path="/writing-portfolio" element={<BlogPage />} />
           </Routes>
         </div>
       </section>

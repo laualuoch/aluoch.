@@ -1,5 +1,5 @@
 import { useNavigate} from "react-router-dom";
-import RoleTab from "./RoleTab";
+import HomeRoleItem from "./HomeRoleItem";
 
 const Hamburger = () => {
     return (
@@ -39,7 +39,7 @@ const HomeItems = () => {
         <div class="flex flex-row justify-between items-center gap-2 pl-20 pr-20 pt-10 pb-10">
             {userRoles.map(({role, navigationAction, buttonText}) => {
                 return (
-                    <RoleTab
+                    <HomeRoleItem
                         userRole ={role}
                         onClickButton={navigationAction}
                         buttonText={buttonText}
@@ -50,7 +50,7 @@ const HomeItems = () => {
     );
 };
 
-const Home = () => {
+const HomePage = () => {
     return (
         <>
         <Hamburger />
@@ -60,4 +60,4 @@ const Home = () => {
 
 };
 
-export default Home;
+export default HomePage;
