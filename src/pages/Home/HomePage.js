@@ -1,32 +1,7 @@
 import { useNavigate} from "react-router-dom";
 import HomeRoleItem from "./HomeRoleItem";
-import HamburgerLink from "../../components/HamburgerLink";
+import Hamburger from "../../components/Hamburger";
 
-const HamburgerItems = () => {
-    const navigate = useNavigate();
-
-    const navigateToHome = () => {
-        navigate('/');
-    }
-    const navItems = [
-        {link:"HOME", linkOnClick: navigateToHome}
-    ];
-
-    return (
-        <nav className="flex pl-20 pr-20 text-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700" aria-label="Breadcrumb">
-            <ol class="inline-flex items-center space-x-1 md:space-x-3">
-                {navItems.map(({link, linkOnClick}) => {
-                    return (
-                        <HamburgerLink
-                            item={link}
-                            itemOnClick={linkOnClick}
-                        />
-                    );
-                })}
-            </ol>
-        </nav>
-    )
-}
 
 const HomeItems = () => {
     const navigate = useNavigate();
@@ -65,9 +40,18 @@ const HomeItems = () => {
 };
 
 const HomePage = () => {
+    const navigate = useNavigate();
+
+    const navigateToHome = () => {
+        navigate('/');
+    }
+    const navItems = [
+        {link:"HOME", linkOnClick: navigateToHome}
+    ];
+
     return (
         <>
-        <HamburgerItems />
+        <Hamburger navItems={navItems} />
         <HomeItems />
         </>
     )

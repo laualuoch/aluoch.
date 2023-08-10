@@ -1,21 +1,5 @@
-import { Link, useNavigate } from "react-router-dom";
-
-const Hamburger = () => {
-    const navigate = useNavigate();
-    return (
-        <nav class="flex pl-20 pr-20 text-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700" aria-label="Breadcrumb">
-            <ol class="inline-flex items-center space-x-1 md:space-x-3">
-                <a href="#" class="inline-flex items-center text-lg text-green py-4 px-2 border-green hover:text-pink font-regular font-chilanka sm:text-center dark:text-gray-400">
-                    HOME
-                </a>
-                <a href="#" class="inline-flex items-center text-lg text-green py-4 px-2 border-green hover:text-pink font-regular font-chilanka sm:text-center dark:text-gray-400">
-                    SOFTWARE ENGINEERING 
-                </a>
-            </ol>
-        </nav>
-    )
-};
-
+import { useNavigate } from "react-router-dom"
+import Hamburger from "../../components/Hamburger";
 
 const SoftwareItems = () => {
     return (
@@ -144,9 +128,24 @@ const SoftwareItems = () => {
 };
 
 const SoftwarePage = () => {
+    const navigate = useNavigate();
+
+    const navigateToHome = () => {
+        navigate('/');
+    }
+
+    const navigateToEngineering = () => {
+        navigate('/engineering-portfolio');
+    }
+
+    const navItems = [
+        {link:"HOME", linkOnClick: navigateToHome},
+        {link:"SOFTWARE PROJECTS", linkOnClick: navigateToEngineering}
+    ];
+
     return (
         <>
-        <Hamburger />
+        <Hamburger navItems={navItems} />
         <SoftwareItems />
         </>
     )
