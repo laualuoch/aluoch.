@@ -3,7 +3,7 @@ import  image from "./../../images/aluoch.jpg"
 
 const HomePage = () => {
     return (
-        <div className="container row justify-between items-center">
+        <div className="container row justify-between center">
             <div className="col-4">
                 <img 
                     className="img-fluid rounded" 

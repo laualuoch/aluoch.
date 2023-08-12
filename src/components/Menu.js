@@ -3,9 +3,9 @@ import logo from '../images/logo.svg';
 
 const LogoItem = ({logoItem, href}) => {
     return (
-        <div class="flex items-center flex-shrink-0 pl-4">
+        <div className="flex items-center flex-shrink-0 pl-4">
             <a href={href}>
-                <img class="h-20 w-100 hover:object-scale-down"
+                <img className="h-20 w-100 hover:object-scale-down"
                 src ={logoItem}
                 alt='Aluoch Laurine Logo'/>
             </a>
@@ -17,7 +17,7 @@ const MenuItem = ({section, href}) => {
     return (
         <a 
         href={href}
-        class="text-lg text-green py-4 px-2 border-green hover:text-pink font-regular font-chilanka"
+        className="nav-link"
         > 
             {section}
         </a>
@@ -25,19 +25,36 @@ const MenuItem = ({section, href}) => {
 };
 
 const Menu = () => {
+    const navItems = [
+        {}
+    ]
     return (
-        <nav class="sticky p-4 top-0 z-50 shadow-sm">
-            <div class="flex flex-row justify-between items-center">
-                <div class="ml-16">
-                    <LogoItem logoItem={logo} href="#home" />
-                </div>
+        <nav className="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	        <div className="container">
+                <a className="navbar-brand" href="">Aluoch.</a>
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="oi oi-menu"></span> Menu
+                </button>
 
-                <div class="mr-16" >
-                    <MenuItem section= "HIRE ME!" href="#hire-me"/>
+                <div className="collapse navbar-collapse" id="ftco-nav">
+                    <ul className="navbar-nav ml-auto">
+                        <li className="nav-item">
+                            <MenuItem section="ABOUT" href="" />
+                        </li>
+                        <li className="nav-item active">
+                            <MenuItem section="SKILLS" href="" />
+                        </li>
+                        <li className="nav-item">
+                            <MenuItem section="PROJECTS" href="" />
+                        </li>
+                        <li className="nav-item">
+                        <MenuItem section="HIRE ME" href="" />
+                        </li>
+                    </ul>
                 </div>
-            </div>
-        </nav>
-    )
+	        </div>
+	  </nav>       
+    );
 };
 
 export default Menu;
