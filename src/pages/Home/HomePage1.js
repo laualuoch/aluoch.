@@ -1,9 +1,9 @@
 import { useNavigate} from "react-router-dom";
 import HomeRoleItem from "./HomeRoleItem";
-import Hamburger from "../../components/Hamburger";
+import Hamburger from "../../components/Breadcrumb";
 
 
-const SkillsPage = () => {
+const HomeItems = () => {
     const navigate = useNavigate();
     
     const navigateToEngineering = () => {
