@@ -17,12 +17,15 @@ module.exports = {
       'jungle': '#D1CEBD',
       'pink': '#FCBAB1',
       'cream': '#F6EDDB',
-      'black': '#000000'
+      'black': '#000000',
+      'crayola': "#E83151",
+      'timberwolf': 'DBD4D3'
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
-      chilanka: ['Chilanka']
+      chilanka: ['Chilanka'],
+      nunito: ['Nunito']
     },
     extend: {
       spacing: {

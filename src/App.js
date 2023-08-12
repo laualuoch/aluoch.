@@ -17,7 +17,7 @@ function App() {
   return (
     <div class="App">  
       <section>
-        <div class="Section">
+        <div class="Section bg-green">
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/engineering-portfolio" element={<SoftwarePage />} />
