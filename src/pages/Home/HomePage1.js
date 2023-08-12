@@ -3,7 +3,7 @@ import HomeRoleItem from "./HomeRoleItem";
 import Hamburger from "../../components/Hamburger";
 
 
-const HomeItems = () => {
+const SkillsPage = () => {
     const navigate = useNavigate();
     
     const navigateToEngineering = () => {

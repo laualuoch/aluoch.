@@ -1,5 +1,13 @@
+import { useNavigate } from "react-router";
+import Button from "../../components/Button";
 
 const HomePage = () => {
+    const navigate = useNavigate();
+
+    const handleButtonClick = () => {
+        navigate('/skills')
+    }
+
     return (
         <div className="">
             <div className="d-flex-start ">
@@ -15,6 +23,9 @@ const HomePage = () => {
                     software engineer, product designer and a skilled technical
                      writer. This online catalogue provides the different chapters of
                       my professional narrative. </h2>
+            </div>
+            <div>
+                <Button text="Technologies" onClick={handleButtonClick}/>
             </div>
         </div>
     )
