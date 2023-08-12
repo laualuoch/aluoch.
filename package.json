@@ -21,7 +21,7 @@
   "scripts": {
     "start": "npm run watch:css && react-scripts start",
     "build": "npm run watch:css && react-scripts build",
-    "build-css": "npx tailwindcss -i src/assets/main.css -o public/main.css",
+    "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",
