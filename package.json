@@ -1,7 +1,7 @@
 {
   "name": "aluoch-dev",
   "version": "0.1.0",
-  "homepage": "https://aluoch-dev.github.io/aluoch-dev.github.io",
+  "homepage": "https://aluoch-dev.github.io",
   "private": false,
   "dependencies": {
     "@headlessui/react": "^1.7.15",
