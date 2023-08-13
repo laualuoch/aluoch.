@@ -1,43 +1,6 @@
-import { useNavigate} from "react-router-dom";
-import HomeRoleItem from "./HomeRoleItem";
-import Hamburger from "../../components/Hamburger";
-
-
-const HomeItems = () => {
-    const navigate = useNavigate();
-    
-    const navigateToEngineering = () => {
-        navigate('/engineering-portfolio');
-    }
-
-    const navigateToDesign = () => {
-        navigate('/design-portfolio');
-    }
-
-    const navigateToWriting = () => {
-        navigate('/writing-portfolio')
-    }
-
-    const userRoles = [
-        {role:"Software Engineer", navigationAction:navigateToEngineering, buttonText: "View Portfolio"},
-        {role:"Product Designer", navigationAction:navigateToDesign, buttonText: "View Portfolio"},
-        {role:"Tech Writer", navigationAction: navigateToWriting, buttonText: "Visit Blog"},
-    ];
-
-    return (
-        <div class="flex flex-col md:flex-row justify-between items-center gap-2 p-2 md:p-10 lg:pl-20 lg:pr-20 pt-5 md:pt-10 pb-5 md:pb-10">
-            {userRoles.map(({role, navigationAction, buttonText}) => {
-                return (
-                    <HomeRoleItem
-                        userRole ={role}
-                        onClickButton={navigationAction}
-                        buttonText={buttonText}
-                    />
-                );
-            })}
-        </div>
-    );
-};
+import { useNavigate } from "react-router";
+import Button from "../../components/Button";
+import Breadcrumb from "../../components/Breadcrumb";
 
 const HomePage = () => {
     const navigate = useNavigate();
@@ -45,17 +8,39 @@ const HomePage = () => {
     const navigateToHome = () => {
         navigate('/');
     }
+
+    const handleButtonClick = () => {
+        navigate('/about')
+    }
+
     const navItems = [
-        {link:"HOME", linkOnClick: navigateToHome}
+        {link:"Home", linkOnClick: navigateToHome}
     ];
 
     return (
         <>
-        <Hamburger navItems={navItems} />
-        <HomeItems />
+        <Breadcrumb navItems={navItems}/>
+        <div className="p-10">
+            <div className="d-flex-start">
+                <img
+                    className="mb-4"
+                    src=""
+                    alt="intro-image" />
+                <h4 className="text-5xl text-beige font-chilanka font-bold mb-4">
+                    Hi, I'm <span className="text-white">Aluoch.</span>
+                </h4>
+                <h2 className="text-xl text-beige font-chilanka font font-semibold mb-4">
+                    Welcome to the digital embodiment of my journey as a versatile 
+                    software engineer, product designer and a skilled technical
+                     writer. This online catalogue provides the different chapters of
+                      my professional narrative. </h2>
+            </div>
+            <div className="d-flex-end">
+                <Button text="About" onClick={handleButtonClick}/>
+            </div>
+        </div>
         </>
-    )
-
-};
+    );
+}
 
 export default HomePage;

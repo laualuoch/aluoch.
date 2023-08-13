@@ -8,6 +8,7 @@ import SoftwarePage from './pages/Software/SoftwarePage';
 import DesignPage from './pages/Design/DesignPage';
 import BlogPage from './pages/Blog/BlogPage';
 import './assets/main.css';
+import About from './pages/About/About';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
@@ -17,6 +18,7 @@ root.render(
     <Router>
       <Routes>
           <Route path="/" element={ <App /> } />
+          <Route path="/about" element={ <About /> } />
           <Route path="/engineering-portfolio" element={<SoftwarePage />} />
           <Route path="/design-portfolio" element={<DesignPage />} />
           <Route path="/writing-portfolio" element={<BlogPage />} />
