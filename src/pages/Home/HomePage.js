@@ -4,19 +4,17 @@ import Breadcrumb from "../../components/Breadcrumb";
 
 const HomePage = () => {
     const navigate = useNavigate();
-    
+
     const navigateToHome = () => {
         navigate('/');
     }
 
     const handleButtonClick = () => {
-        navigate('/skills')
+        navigate('/about')
     }
 
-    
-
     const navItems = [
-        {link:"HOME", linkOnClick: navigateToHome}
+        {link:"Home", linkOnClick: navigateToHome}
     ];
 
     return (
