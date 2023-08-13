@@ -1,6 +1,6 @@
-import React from "react"; 
-
+import React from "react";
 import Card from "../../components/Card";
+import InfoCard from "../../components/InfoCard";
 
 const About = () => {
     const aboutItems = [
@@ -10,14 +10,16 @@ const About = () => {
     ];
 
     return (
-        aboutItems.map(({title, description, tools}) => (
-            <Card
-                key={title} 
-                title={title}
-                description={description}
-                tools={tools}
-            />
-        ))
+        <div className= "d-flex flex-wrap">
+            {aboutItems.map(({ title, description, tools }) => (
+                <Card
+                    key={title}
+                    title={title}
+                    description={description}
+                    tools={tools}
+                />
+            ))}
+        </div>
     );
 };
 
