@@ -51,7 +51,7 @@ To run the portfolio page locally, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/portfolio-page.git
+   git clone git@github.com:aluoch-dev/aluoch..git
    ```
 
 2. Navigate to the project directory:
