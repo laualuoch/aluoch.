@@ -7,6 +7,9 @@ import App from './App';
 import SoftwarePage from './pages/Software/SoftwarePage';
 import DesignPage from './pages/Design/DesignPage';
 import BlogPage from './pages/Blog/BlogPage';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
+import './assets/custom.scss';
 import './assets/main.css';
 import About from './pages/About/About';
 
