@@ -17,7 +17,7 @@ const SoftwareItems = () => {
     // ]
 
     return (
-        <Carousel />
+       <Carousel />
     )
 };
 
