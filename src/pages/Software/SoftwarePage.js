@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom"
 import Hamburger from "../../components/Breadcrumb";
-import CarouselSlider from "../../components/CarouselSlider";
+import Carousel from "../../components/Carousel";
 
 const SoftwareItems = () => {
 
@@ -17,7 +17,7 @@ const SoftwareItems = () => {
     // ]
 
     return (
-        <CarouselSlider  />
+       <Carousel />
     )
 };
 
