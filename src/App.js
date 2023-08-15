@@ -12,13 +12,11 @@ function App() {
     <div class="App">  
       <section>
         <div class="Section">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/portfolio" element={<PortfolioPage />} />
-            <Route path="/more" element={<More />} />
-            <Route path="/end" element={<End />} />
-          </Routes>
+          < HomePage />
+          <About />
+          <PortfolioPage />
+          <More />
+          <End />
         </div>
       </section>
     </div>
