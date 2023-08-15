@@ -46,8 +46,7 @@ const PortfolioPage = () => {
     const navItems = [
         {link:"Home", linkOnClick: navigateToHome},
         {link:"About", linkOnClick: navigateToAbout},
-        {link:"Portfolio", linkOnClick: navigateToPortfolio},
-        {link:"Etc.", linkOnClick: navigateToMore}
+        {link:"Portfolio", linkOnClick: navigateToPortfolio}
     ];
 
     return (
@@ -59,7 +58,7 @@ const PortfolioPage = () => {
             </div>
             <div className="mt-4 flex flex-col items-center">
                 
-                <Button text="I read and write too..." />
+                <Button text="I read and write too..." onClick={navigateToMore} />
             </div>
         </div>
         <Footer />

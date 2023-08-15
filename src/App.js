@@ -4,6 +4,7 @@ import HomePage from "./pages/Home/HomePage";
 import './assets/main.css'
 import About from "./pages/About/About";
 import PortfolioPage from "./pages/Portfolio/PortfolioPage";
+import More from "./pages/More/More";
 
 
 const getCurrentYear = () => {
@@ -21,6 +22,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<About />} />
             <Route path="/portfolio" element={<PortfolioPage />} />
+            <Route path="/more" element={<More />} />
           </Routes>
         </div>
       </section>
