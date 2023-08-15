@@ -8,6 +8,7 @@ import './assets/main.css';
 import About from './pages/About/About';
 import PortfolioPage from './pages/Portfolio/PortfolioPage';
 import More from './pages/More/More';
+import End from "./pages/End/End";
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
@@ -20,6 +21,7 @@ root.render(
           <Route path="/about" element={ <About /> } />
           <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path="/more" element={<More />} />
+          <Route path="/end" element={<End />} />
         </Routes>
     </Router>
   </StrictMode>
