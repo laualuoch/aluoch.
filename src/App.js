@@ -1,22 +1,54 @@
 import React from "react";
-import {  Routes, Route } from "react-router-dom";
+import {  Routes, Route, useNavigate } from "react-router-dom";
 import HomePage from "./pages/Home/HomePage";
 import './assets/main.css'
 import About from "./pages/About/About";
 import PortfolioPage from "./pages/Portfolio/Portfolio";
 import More from "./pages/More/More";
 import End from "./pages/End/End";
+import { Breadcrumb } from "react-bootstrap";
 
 function App() {
+  const navigate = useNavigate();
+
+    const navigateToHome = () => {
+        navigate('/');
+    }
+
+    const navigateToAbout = () => {
+        navigate('/about');
+    }
+    const navigateToPortfolio = () => {
+        navigate('/portfolio');
+    }
+
+    const navigateToBlog = () => {
+        navigate('/blog');
+    }
+
+    const navigateToContact = () => {
+        navigate('/contact');
+    }
+
+    const navItems = [
+      {link:"Home.", linkOnClick: navigateToHome},
+      {link:"About.", linkOnClick: navigateToAbout},
+      {link:"Portfolio.", linkOnClick: navigateToPortfolio},
+      {link:"Blog.", linkOnClick: navigateToBlog},
+      {link:"Contact.", linkOnClick: navigateToContact}
+  ];
+
   return (
     <div class="App">  
+      <Breadcrumb navItems={navItems} />
       <section>
         <div class="Section">
           < HomePage />
-          <About />
-          <PortfolioPage />
-          <More />
-          <End />
+        </div>
+      </section>
+      <section>
+        <div class="Section">
+          < End />
         </div>
       </section>
     </div>

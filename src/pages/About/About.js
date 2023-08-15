@@ -1,29 +1,8 @@
 import React from "react";
 import Card from "../../components/Card";
-import Breadcrumb from "../../components/Breadcrumb";
-import { useNavigate } from "react-router-dom";
 import Button from "../../components/Button";
-import Footer from "../../components/Footer";
 
 const About = () => {
-    const navigate = useNavigate();
-
-    const navigateToHome = () => {
-        navigate('/');
-    }
-
-    const navigateToAbout = () => {
-        navigate('/about');
-    }
-
-    const handleButtonClick = () => {
-        navigate('/portfolio')
-    }
-
-    const navItems = [
-        {link:"Home", linkOnClick: navigateToHome},
-        {link:"About", linkOnClick: navigateToAbout}
-    ];
 
     const aboutItems = [
         {title: "Software Engineering", description: "My approach to software engineering entails gathering user needs, designing solutions, testing designs, and developing. Followed by continuous iteration. I develop both Android and Web Apps", tools: ["HTML & CSS", "JavaScript", "React.js", "Python", "Kotlin", "Jetpack Compose"]},
@@ -33,9 +12,8 @@ const About = () => {
 
     return (
         <>
-            <Breadcrumb navItems={navItems} />
             <div className="flex flex-col h-screen justify-center">
-                <div className="container mx-auto px-4 shadow-lg flex flex-col items-center justify-center h-3/4">
+                <div className="container mx-auto px-4 flex flex-col items-center justify-center h-3/4">
                     <div className="flex flex-wrap justify-center w-full">
                         {aboutItems.map(({ title, description, tools }) => (
                             <Card
@@ -48,11 +26,10 @@ const About = () => {
                         ))}
                     </div>
                     <div className="flex justify-center mt-4">
-                        <Button text="Portfolio" onClick={handleButtonClick} />
+                        <Button text="Portfolio" />
                     </div>
                 </div>
             </div>
-            <Footer />
         </>
     );
     
