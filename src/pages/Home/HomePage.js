@@ -3,6 +3,7 @@ import Button from "../../components/Button";
 import Breadcrumb from "../../components/Breadcrumb";
 import aluoch from "../../images/aluoch.jpg"
 import Footer from "../../components/Footer";
+import About from "../About/About";
 
 const HomePage = () => {
     const navigate = useNavigate();
@@ -41,6 +42,10 @@ const HomePage = () => {
                                 software engineer, product designer and a skilled technical
                                 writer. This online catalogue provides the different chapters of
                                 my professional narrative.
+                            </h2>
+                            <h2 className="text-xl text-beige font-chilanka font font-semibold mb-4">
+                                Outside of Work, I enjoy Reading (all sorts of books), and people-watching. I also 
+                                have a balcony garden that keeps me busy, sometimes watering or just watching the plants. 
                             </h2>
                         </div>
                     </div>
