@@ -31,21 +31,32 @@ const Portfolio = () => {
         navigate('/');
     }
 
-    const navigateToPortfolio = () => {
-        navigate('/portfolio');
-    }
-
     const navigateToAbout = () => {
         navigate('/about');
+    }
+    const navigateToPortfolio = () => {
+        navigate('/portfolio');
     }
 
     const navigateToMore = () => {
         navigate('/more');
     }
 
-    
+    const navigateToEnd = () => {
+        navigate('/end');
+    }
+
+    const navItems = [
+        {link:"Home.", linkOnClick: navigateToHome},
+        {link:"About.", linkOnClick: navigateToAbout},
+        {link:"Portfolio.", linkOnClick: navigateToPortfolio},
+        {link:"Blog.", linkOnClick: navigateToMore},
+        {link:"Contact.", linkOnClick: navigateToEnd}
+    ];
 
     return (
+        <>
+        <Breadcrumb navItems={navItems} />
         <div className="container flex flex-col items-center p-8 mx-auto">
             <div className="mt-4 flex items-center">
             <PortfolioItems />
@@ -55,6 +66,8 @@ const Portfolio = () => {
                 <Button text="I read and write too..." onClick={navigateToMore} />
             </div>
         </div>
+        <Footer />
+        </>
     );
 
 };
