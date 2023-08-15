@@ -1,35 +1,49 @@
 import React from "react";
-import {  Routes, Route } from "react-router-dom";
+import {  Routes, Route, useNavigate } from "react-router-dom";
 import HomePage from "./pages/Home/HomePage";
-import SoftwarePage from "./pages/Software/SoftwarePage";
-import DesignPage from "./pages/Design/DesignPage";
-import BlogPage from "./pages/Blog/BlogPage";
 import './assets/main.css'
 import About from "./pages/About/About";
-
-
-const getCurrentYear = () => {
-  let year= new Date().getFullYear(); 
-  return year;
-
-}
+import PortfolioPage from "./pages/Portfolio/Portfolio";
+import Blog from "./pages/Blog/Blog";
+import Contact from "./pages/Contact/Contact";
+import { Breadcrumb } from "react-bootstrap";
 
 function App() {
+  const navigate = useNavigate();
+
+    const navigateToHome = () => {
+        navigate('/');
+    }
+
+    const navigateToAbout = () => {
+        navigate('/about');
+    }
+    const navigateToPortfolio = () => {
+        navigate('/portfolio');
+    }
+
+    const navigateToBlog = () => {
+        navigate('/blog');
+    }
+
+    const navigateToContact = () => {
+        navigate('/contact');
+    }
+
+    const navItems = [
+      {link:"Home.", linkOnClick: navigateToHome},
+      {link:"About.", linkOnClick: navigateToAbout},
+      {link:"Portfolio.", linkOnClick: navigateToPortfolio},
+      {link:"Blog.", linkOnClick: navigateToBlog},
+      {link:"Contact.", linkOnClick: navigateToContact}
+  ];
+
   return (
     <div class="App">  
       <section>
         <div class="Section">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/engineering-portfolio" element={<SoftwarePage />} />
-            <Route path="/design-portfolio" element={<DesignPage />} />
-            <Route path="/writing-portfolio" element={<BlogPage />} />
-          </Routes>
+          < HomePage />
         </div>
-      </section>
-
-      <section class="work-with-me">
       </section>
     </div>
   );

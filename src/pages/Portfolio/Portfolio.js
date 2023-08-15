@@ -1,8 +1,11 @@
 import { useNavigate } from "react-router-dom"
-import Hamburger from "../../components/Breadcrumb";
+import Breadcrumb from "../../components/Breadcrumb";
 import Carousel from "../../components/Carousel";
+import Footer from "../../components/Footer";
+import Button from "../../components/Button";
 
-const SoftwareItems = () => {
+
+const PortfolioItems = () => {
 
     const navigate = useNavigate();
 
@@ -21,29 +24,52 @@ const SoftwareItems = () => {
     )
 };
 
-const SoftwarePage = () => {
+const Portfolio = () => {
     const navigate = useNavigate();
 
     const navigateToHome = () => {
         navigate('/');
     }
 
-    const navigateToEngineering = () => {
-        navigate('/engineering-portfolio');
+    const navigateToAbout = () => {
+        navigate('/about');
+    }
+    const navigateToPortfolio = () => {
+        navigate('/portfolio');
+    }
+
+    const navigateToMore = () => {
+        navigate('/more');
+    }
+
+    const navigateToEnd = () => {
+        navigate('/end');
     }
 
     const navItems = [
-        {link:"HOME", linkOnClick: navigateToHome},
-        {link:"SOFTWARE PROJECTS", linkOnClick: navigateToEngineering}
+        {link:"Home.", linkOnClick: navigateToHome},
+        {link:"About.", linkOnClick: navigateToAbout},
+        {link:"Portfolio.", linkOnClick: navigateToPortfolio},
+        {link:"Blog.", linkOnClick: navigateToMore},
+        {link:"Contact.", linkOnClick: navigateToEnd}
     ];
 
     return (
         <>
-        <Hamburger navItems={navItems} />
-        <SoftwareItems />
+        <Breadcrumb navItems={navItems} />
+        <div className="container flex flex-col items-center p-8 mx-auto">
+            <div className="mt-4 flex items-center">
+            <PortfolioItems />
+            </div>
+            <div className="mt-4 flex flex-col items-center">
+                
+                <Button text="I read and write too..." onClick={navigateToMore} />
+            </div>
+        </div>
+        <Footer />
         </>
-    )
+    );
 
 };
 
-export default SoftwarePage;
+export default Portfolio;
