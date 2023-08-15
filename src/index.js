@@ -8,7 +8,7 @@ import './assets/main.css';
 import About from './pages/About/About';
 import PortfolioPage from './pages/Portfolio/Portfolio';
 import Blog from './pages/Blog/Blog';
-import End from "./pages/End/End";
+import Contact from "./pages/End/End";
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
@@ -21,7 +21,7 @@ root.render(
           <Route path="/about" element={ <About /> } />
           <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path="/more" element={<Blog />} />
-          <Route path="/end" element={<End />} />
+          <Route path="/end" element={<Contact />} />
         </Routes>
     </Router>
   </StrictMode>
