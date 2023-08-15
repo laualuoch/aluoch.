@@ -12,12 +12,27 @@ const HomePage = () => {
         navigate('/');
     }
 
-    const handleButtonClick = () => {
-        navigate('/about')
+    const navigateToAbout = () => {
+        navigate('/about');
+    }
+    const navigateToPortfolio = () => {
+        navigate('/portfolio');
+    }
+
+    const navigateToMore = () => {
+        navigate('/more');
+    }
+
+    const navigateToEnd = () => {
+        navigate('/end');
     }
 
     const navItems = [
-        {link:"Home", linkOnClick: navigateToHome}
+        {link:"Home.", linkOnClick: navigateToHome},
+        {link:"About.", linkOnClick: navigateToAbout},
+        {link:"Portfolio.", linkOnClick: navigateToPortfolio},
+        {link:"Blog.", linkOnClick: navigateToMore},
+        {link:"Contact.", linkOnClick: navigateToEnd}
     ];
 
     return (
@@ -50,11 +65,10 @@ const HomePage = () => {
                     </div>
                 </div>
                 <div className="flex justify-center p-6 mt-4 mb-4">
-                    <Button text="About" onClick={handleButtonClick} />
+                    <Button text="About" />
                 </div>
             </div>
         </div>
-        <Footer />
         </>
     );    
 }

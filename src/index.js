@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import App from './App';
 import './assets/main.css';
 import About from './pages/About/About';
-import PortfolioPage from './pages/Portfolio/PortfolioPage';
+import PortfolioPage from './pages/Portfolio/Portfolio';
 import More from './pages/More/More';
 import End from "./pages/End/End";
 

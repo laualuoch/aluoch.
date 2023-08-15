@@ -24,7 +24,7 @@ const PortfolioItems = () => {
     )
 };
 
-const PortfolioPage = () => {
+const Portfolio = () => {
     const navigate = useNavigate();
 
     const navigateToHome = () => {
@@ -43,16 +43,10 @@ const PortfolioPage = () => {
         navigate('/more');
     }
 
-    const navItems = [
-        {link:"Home", linkOnClick: navigateToHome},
-        {link:"About", linkOnClick: navigateToAbout},
-        {link:"Portfolio", linkOnClick: navigateToPortfolio}
-    ];
+    
 
     return (
-        <>
-        <Breadcrumb navItems={navItems} />
-        <div className="container flex flex-col items-center p-8 mx-auto shadow-md">
+        <div className="container flex flex-col items-center p-8 mx-auto">
             <div className="mt-4 flex items-center">
             <PortfolioItems />
             </div>
@@ -61,10 +55,8 @@ const PortfolioPage = () => {
                 <Button text="I read and write too..." onClick={navigateToMore} />
             </div>
         </div>
-        <Footer />
-        </>
     );
 
 };
 
-export default PortfolioPage;
+export default Portfolio;
