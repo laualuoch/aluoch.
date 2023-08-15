@@ -32,8 +32,13 @@ const PortfolioPage = () => {
         navigate('/portfolio');
     }
 
+    const navigateToAbout = () => {
+        navigate('/about');
+    }
+
     const navItems = [
         {link:"Home", linkOnClick: navigateToHome},
+        {link:"About", linkOnClick: navigateToAbout},
         {link:"Portfolio", linkOnClick: navigateToPortfolio}
     ];
 
@@ -43,6 +48,7 @@ const PortfolioPage = () => {
         <PortfolioItems />
         </>
     )
+
 };
 
 export default PortfolioPage;
