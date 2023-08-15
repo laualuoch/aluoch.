@@ -9,16 +9,18 @@ const About = () => {
     ];
 
     return (
-        <div className= "d-flex flex-wrap">
+        <div className="flex flex-wrap justify-center">
             {aboutItems.map(({ title, description, tools }) => (
                 <Card
                     key={title}
                     title={title}
                     description={description}
                     tools={tools}
+                    className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 p-4"
                 />
             ))}
         </div>
+
     );
 };
 
