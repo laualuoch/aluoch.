@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-
 import image1 from  "../images/image-1.jpg";
 import image2 from "../images/image-2.jpg";
 import image3 from "../images/image-3.jpg";
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const carouselsData = [
   { src: image1, caption: 'Caption Text' },
@@ -32,16 +33,11 @@ const Carousel = () => {
             <h1> DairyYetu</h1>
             <p>A single player flipcard built using Bootsrap and React Js</p>
             <button className="bg-green hover:bg-pink text-white font-regular font-chilanka py-1 md:py-2 px-2 md:px-4 border border-blue-700 rounded">
-                Read
               </button>
             </div>
             <div className="flex items-center">
-              <button className="bg-green hover:bg-pink text-white font-regular font-chilanka py-1 md:py-2 px-2 md:px-4 border border-blue-700 rounded">
-                GB
-              </button>
-              <button className="bg-green hover:bg-pink text-white font-regular font-chilanka py-1 md:py-2 px-2 md:px-4 border border-blue-700 rounded">
-                Link
-              </button>
+              <FontAwesomeIcon icon="fa-regular fa-coffee" />
+              <FontAwesomeIcon icon="fa-regular fa-coffee" />
             </div>
           </div>
 
