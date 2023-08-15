@@ -1,8 +1,38 @@
 import React from "react";
 import Card from "../../components/Card";
 import Button from "../../components/Button";
+import { useNavigate } from "react-router-dom";
+import { Breadcrumb } from "react-bootstrap";
 
 const About = () => {
+    const navigate = useNavigate();
+
+    const navigateToHome = () => {
+        navigate('/');
+    }
+
+    const navigateToAbout = () => {
+        navigate('/about');
+    }
+    const navigateToPortfolio = () => {
+        navigate('/portfolio');
+    }
+
+    const navigateToMore = () => {
+        navigate('/more');
+    }
+
+    const navigateToEnd = () => {
+        navigate('/end');
+    }
+
+    const navItems = [
+        {link:"Home.", linkOnClick: navigateToHome},
+        {link:"About.", linkOnClick: navigateToAbout},
+        {link:"Portfolio.", linkOnClick: navigateToPortfolio},
+        {link:"Blog.", linkOnClick: navigateToMore},
+        {link:"Contact.", linkOnClick: navigateToEnd}
+    ];
 
     const aboutItems = [
         {title: "Software Engineering", description: "My approach to software engineering entails gathering user needs, designing solutions, testing designs, and developing. Followed by continuous iteration. I develop both Android and Web Apps", tools: ["HTML & CSS", "JavaScript", "React.js", "Python", "Kotlin", "Jetpack Compose"]},
@@ -12,6 +42,7 @@ const About = () => {
 
     return (
         <>
+        <Breadcrumb navItems={navItems}/>
             <div className="flex flex-col h-screen justify-center">
                 <div className="container mx-auto px-4 flex flex-col items-center justify-center h-3/4">
                     <div className="flex flex-wrap justify-center w-full">

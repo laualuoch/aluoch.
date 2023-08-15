@@ -4,7 +4,7 @@ import HomePage from "./pages/Home/HomePage";
 import './assets/main.css'
 import About from "./pages/About/About";
 import PortfolioPage from "./pages/Portfolio/Portfolio";
-import More from "./pages/More/More";
+import Blog from "./pages/Blog/Blog";
 import End from "./pages/End/End";
 import { Breadcrumb } from "react-bootstrap";
 
@@ -40,15 +40,9 @@ function App() {
 
   return (
     <div class="App">  
-      <Breadcrumb navItems={navItems} />
       <section>
         <div class="Section">
           < HomePage />
-        </div>
-      </section>
-      <section>
-        <div class="Section">
-          < End />
         </div>
       </section>
     </div>
