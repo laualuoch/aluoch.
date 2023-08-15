@@ -2,6 +2,7 @@ import React from "react";
 import Card from "../../components/Card";
 import Breadcrumb from "../../components/Breadcrumb";
 import { useNavigate } from "react-router-dom";
+import Button from "../../components/Button";
 
 const About = () => {
     const navigate = useNavigate();
@@ -13,8 +14,9 @@ const About = () => {
     const navigateToAbout = () => {
         navigate('/about');
     }
+
     const handleButtonClick = () => {
-        navigate('/about')
+        navigate('/portfolio')
     }
 
     const navItems = [
@@ -30,8 +32,8 @@ const About = () => {
 
     return (
         <>
-         <Breadcrumb navItems={navItems}/>
-         <div className="flex flex-wrap justify-center">
+        <Breadcrumb navItems={navItems}/>
+        <div className="flex flex-wrap justify-center">
             {aboutItems.map(({ title, description, tools }) => (
                 <Card
                     key={title}
@@ -42,6 +44,7 @@ const About = () => {
                 />
             ))}
         </div>
+        <Button text="Portfolio" onClick={handleButtonClick} />
         </>
        
 
