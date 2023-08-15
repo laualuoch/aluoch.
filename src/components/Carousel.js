@@ -22,7 +22,7 @@ const Carousel = () => {
 
 
   return (
-    <div className="container mx-auto px-4 border rounded-lg">
+    <div className="container mx-auto border border-green rounded-lg shadow-lg">
       <div className="relative w-full">
         {carouselsData.map((carouselData, index) => (
           <div

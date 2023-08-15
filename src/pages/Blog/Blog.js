@@ -37,11 +37,9 @@ const Blog = () => {
     ];
 
     const blogData = [
-        {category: "Python", title: "How to quickly deploy a static website", intro: "Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety of tools that even influence both web designers and developers influence both web designers and developers."},
-        {category: "Reactjs", title: "How to quickly deploy a static website", intro: "Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety of tools that even influence both web designers and developers influence both web designers and developers."},
-        {category: "Python", title: "How to quickly deploy a static website", intro: "Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety of tools that even influence both web designers and developers influence both web designers and developers."},
-        {category: "Reactjs", title: "How to quickly deploy a static website", intro: "Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety of tools that even influence both web designers and developers influence both web designers and developers."}
-    ]
+        {category: "Python", title: "Mastering Python Errors, Exceptions, and Exception Handling: A Comprehensive Guide - Part One", intro: "In the Tiobe Index Report as of 2023, Python is the most widely used programming language. This is considerably so given the simplicity and versatility of the language. Now, as a developer, it is important to build robust applications that are not only functional but also efficient."},
+        {category: "Python", title: "Mastering Python Errors, Exceptions, and Exception Handling: A Comprehensive Guide - Part Two", intro: "In the previous article, we mentioned that in Python programming, there are two distinguishable Errors; syntax errors and exceptions. In this article, we are going to explore exceptions, taking a dive into the different exceptions and how to handle them. "},
+        ];
 
     return (
         <>
@@ -49,8 +47,8 @@ const Blog = () => {
         <section>
             <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
                 <div class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
-                    <h2 class="mb-4 text-3xl lg:text-4xl tracking-tight font-chilanka font-extrabold text-gray-900 dark:text-white">Blog</h2>
-                    <p class="font-light font-chilanka text-gray-500 sm:text-xl dark:text-gray-400">Exploring the Tech World One Line at a Time.</p>
+                    <h2 class="mb-4 text-3xl lg:text-4xl tracking-tight font-chilanka font-extrabold text-beige">Blog</h2>
+                    <p class="font-light font-chilanka text-white sm:text-xl dark:text-gray-400">Exploring the Tech World One Line at a Time.</p>
                 </div> 
                 <div class="grid gap-8 lg:grid-cols-2">
                     {blogData.map(({category, title, intro, link}) => (
