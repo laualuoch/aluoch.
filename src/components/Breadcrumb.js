@@ -13,7 +13,7 @@ const Link = ({ item, itemOnClick}) => {
 const Breadcrumb = ({navItems}) => {
     
     return (
-        <div className="px-10">
+        <div className=" px-10">
             <ul class="py-3">
                 {navItems.map(({link, linkOnClick}) => {
                     return (
