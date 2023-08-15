@@ -23,7 +23,7 @@ const HomePage = () => {
     return (
         <>
         <Breadcrumb navItems={navItems} />
-        <div className="flex h-screen items-center justify-center">
+        <div className="flex flex-col h-screen items-center justify-center">
             <div className="container mx-auto px-4 shadow-lg">
                 <div className="flex items-center justify-center p-6 space-x-8">
                     <div className="flex items-center justify-center">
