@@ -5,7 +5,7 @@ import './assets/main.css'
 import About from "./pages/About/About";
 import PortfolioPage from "./pages/Portfolio/Portfolio";
 import Blog from "./pages/Blog/Blog";
-import Contact from "./pages/End/End";
+import Contact from "./pages/Contact/Contact";
 import { Breadcrumb } from "react-bootstrap";
 
 function App() {

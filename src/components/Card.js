@@ -4,8 +4,8 @@ const Card = ({title, description, tools}) => {
     return (
         <div class="max-w-sm rounded overflow-hidden shadow-lg border-spacing-1 p-5 m-3">
             <div class="px-6 py-4">
-                <div class="font-bold text-xl mb-2">{ title }</div>
-                <p class="text-gray-700 text-base">
+                <div class="font-bold text-beige font-chilanka text-xl mb-2">{ title }</div>
+                <p class="text-gray-700  font-chilanka text-base">
                     { description }
                 </p>
             </div>
