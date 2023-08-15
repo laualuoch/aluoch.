@@ -23,8 +23,8 @@ const More = () => {
         navigate('/more');
     }
 
-    const handleButtonClick = () => {
-        navigate('/more');
+    const navigateToEnd = () => {
+        navigate('/end');
     }
 
     const navItems = [
@@ -56,7 +56,7 @@ const More = () => {
                         ))}
                     </div>
                     <div className="flex justify-center mt-4">
-                        <Button text="Portfolio" onClick={handleButtonClick} />
+                        <Button text="Contact" onClick={navigateToEnd} />
                     </div>
                 </div>
             </div>
