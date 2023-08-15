@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom"
-import Hamburger from "../../components/Breadcrumb";
+import Breadcrumb from "../../components/Breadcrumb";
 import Carousel from "../../components/Carousel";
 
-const SoftwareItems = () => {
+const PortfolioItems = () => {
 
     const navigate = useNavigate();
 
@@ -21,29 +21,28 @@ const SoftwareItems = () => {
     )
 };
 
-const SoftwarePage = () => {
+const PortfolioPage = () => {
     const navigate = useNavigate();
 
     const navigateToHome = () => {
         navigate('/');
     }
 
-    const navigateToEngineering = () => {
-        navigate('/engineering-portfolio');
+    const navigateToPortfolio = () => {
+        navigate('/portfolio');
     }
 
     const navItems = [
-        {link:"HOME", linkOnClick: navigateToHome},
-        {link:"SOFTWARE PROJECTS", linkOnClick: navigateToEngineering}
+        {link:"Home", linkOnClick: navigateToHome},
+        {link:"Portfolio", linkOnClick: navigateToPortfolio}
     ];
 
     return (
         <>
-        <Hamburger navItems={navItems} />
-        <SoftwareItems />
+        <Breadcrumb navItems={navItems} />
+        <PortfolioItems />
         </>
     )
-
 };
 
-export default SoftwarePage;
+export default PortfolioPage;

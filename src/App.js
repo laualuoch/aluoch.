@@ -1,11 +1,9 @@
 import React from "react";
 import {  Routes, Route } from "react-router-dom";
 import HomePage from "./pages/Home/HomePage";
-import SoftwarePage from "./pages/Software/SoftwarePage";
-import DesignPage from "./pages/Design/DesignPage";
-import BlogPage from "./pages/Blog/BlogPage";
 import './assets/main.css'
 import About from "./pages/About/About";
+import PortfolioPage from "./pages/Portfolio/PortfolioPage";
 
 
 const getCurrentYear = () => {
@@ -22,9 +20,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<About />} />
-            <Route path="/engineering-portfolio" element={<SoftwarePage />} />
-            <Route path="/design-portfolio" element={<DesignPage />} />
-            <Route path="/writing-portfolio" element={<BlogPage />} />
+            <Route path="/portfolio" element={<PortfolioPage />} />
           </Routes>
         </div>
       </section>
