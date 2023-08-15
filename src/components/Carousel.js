@@ -7,9 +7,9 @@ import { faLink } from '@fortawesome/free-solid-svg-icons';
 import { faGithub as faGithubBrands } from '@fortawesome/free-brands-svg-icons';
 
 const carouselsData = [
-  { src: image1, title:"aluoch.", description:"A professional portfolio designed in Figma and built using ReactJs and Tailwind CSS" },
-  { src: image2, title:"heatmap", description:"An implementation of the Google Heatmap Layer as a data visualization tool mapping patient data. Built using JavaScript."},
-  { src: image3, description:"A single player flipcard built using Bootsrap and React Js"}
+  { src: image1, title:"aluoch.", description:"A professional portfolio designed in Figma and built using ReactJs and Tailwind CSS", hostingLink: "", gitHubLink: "https://github.com/aluoch-dev/aluoch."},
+  { src: image2, title:"heatmap", description:"An implementation of the Google Heatmap Layer as a data visualization tool mapping patient data. Built using JavaScript.", gitHubLink: "https://github.com/aluoch-dev/heatMap"},
+  { src: image3, description:"A single player flipcard built using Bootsrap and React Js", hostingLink:"https://flippcard-app.vercel.app/", gitHubLink:"https://github.com/aluoch-dev/flipcard-game"}
 ];
 
 const Carousel = () => {
