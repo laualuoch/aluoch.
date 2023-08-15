@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
-import image1 from  "../images/image-1.jpg";
+import image1 from  "../images/aluoch-dev.png";
+import image2 from  "../images/heatmap.png";
+import image3 from  "../images/flipcard.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 import { faGithub as faGithubBrands } from '@fortawesome/free-brands-svg-icons';
 
 const carouselsData = [
-  { src: image1, caption: 'Caption Text', title:"flipCard Game", description:"A single player flipcard built using Bootsrap and React Js"},
-  { src: image1, caption: 'Caption Two', title:"dairyYetu", description:"An e-commerce site built using PHP(Laravel), and Bootstrap" },
-  { src: image1, caption: 'Caption Three', title:"aluoch.", description:"A professional portfolio designed in Figma and built using ReactJs and Tailwind CSS" },
+  { src: image1, title:"aluoch.", description:"A professional portfolio designed in Figma and built using ReactJs and Tailwind CSS" },
+  { src: image2, title:"heatmap", description:"An implementation of the Google Heatmap Layer as a data visualization tool mapping patient data. Built using JavaScript."},
+  { src: image3, description:"A single player flipcard built using Bootsrap and React Js"}
 ];
 
 const Carousel = () => {
@@ -20,7 +22,7 @@ const Carousel = () => {
 
 
   return (
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto px-4 border rounded-lg">
       <div className="relative w-full">
         {carouselsData.map((carouselData, index) => (
           <div
