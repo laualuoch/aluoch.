@@ -4,6 +4,7 @@ import Carousel from "../../components/Carousel";
 import Footer from "../../components/Footer";
 import Button from "../../components/Button";
 
+
 const PortfolioItems = () => {
 
     const navigate = useNavigate();
@@ -38,10 +39,15 @@ const PortfolioPage = () => {
         navigate('/about');
     }
 
+    const navigateToMore = () => {
+        navigate('/more');
+    }
+
     const navItems = [
         {link:"Home", linkOnClick: navigateToHome},
         {link:"About", linkOnClick: navigateToAbout},
-        {link:"Portfolio", linkOnClick: navigateToPortfolio}
+        {link:"Portfolio", linkOnClick: navigateToPortfolio},
+        {link:"Etc.", linkOnClick: navigateToMore}
     ];
 
     return (

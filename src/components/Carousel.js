@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import image1 from  "../images/image-1.jpg";
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLink } from '@fortawesome/free-solid-svg-icons';
+import { faGithub as faGithubBrands } from '@fortawesome/free-brands-svg-icons';
 
 const carouselsData = [
   { src: image1, caption: 'Caption Text', title:"flipCard Game", description:"A single player flipcard built using Bootsrap and React Js"},
@@ -27,18 +28,13 @@ const Carousel = () => {
             className={`${index === slideIndex ? 'block' : 'hidden'} h-3/4 w-full relative`}
           >
            <div className="absolute bottom-0 px-2 md:px-4 py-2 md:py-3 bg-beige w-full flex justify-between">
-            <div className="text-white font-regular font-chilanka font-regular text-sm md:text-xl">
-            <h1>{carouselData.title}</h1>
-            <p>{carouselData.description}</p>
-            <button className="bg-green hover:bg-pink text-white font-regular font-chilanka py-1 md:py-2 px-2 md:px-4 border border-blue-700 rounded">
-            </button>
+              <div className="text-white font-regular font-chilanka font-regular text-sm md:text-xl">
+                <h1>{carouselData.title}</h1>
+                <p>{carouselData.description}</p>
+                <FontAwesomeIcon icon={faGithubBrands} className="p-2 text-white text-xl cursor-pointer" />
+                <FontAwesomeIcon icon={faLink} className="p-2 text-white text-xl cursor-pointer" />
+              </div>
             </div>
-            <div className="flex items-center">
-              <FontAwesomeIcon icon="fa-regular fa-coffee" />
-              <FontAwesomeIcon icon="fa-regular fa-coffee" />
-            </div>
-          </div>
-
             <img
               src={carouselData.src}
               alt={`Slide ${index + 1}`}
