@@ -21,9 +21,9 @@ The portfolio page is designed to present my skills and experience in UI/UX desi
 The portfolio page includes the following features:
 
 - **Home**: An introduction section with a brief overview of my professional background and skills.
+- **About**: Information about my qualifications, and skills.
 - **Projects**: A showcase of my UI/UX design and full-stack engineering projects, including descriptions, images, and links to live demos or repositories.
-- **Case Studies**: Detailed case studies highlighting the design process and technical aspects of selected projects.
-- **About**: Information about my education, work experience, and relevant skills.
+- **Blog**: A collection of articles I have authored and the links to the full articles.
 - **Contact**: A contact form and links to my social media profiles and professional network.
 
 ## Technologies Used
@@ -37,11 +37,11 @@ The portfolio page is built using the following technologies:
 
 - **Back-end**:
   - Node.js
-  - MySQL
+  - MongoDB
 
 - **Additional Tools and Libraries**:
   - Git
-  - GitHub Pages
+  - Vercel App Hosting
   - NPM
 
 ## Getting Started
