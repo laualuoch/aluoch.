@@ -1,6 +1,8 @@
 import { useNavigate } from "react-router-dom"
 import Breadcrumb from "../../components/Breadcrumb";
 import Carousel from "../../components/Carousel";
+import Footer from "../../components/Footer";
+import Button from "../../components/Button";
 
 const PortfolioItems = () => {
 
@@ -45,9 +47,18 @@ const PortfolioPage = () => {
     return (
         <>
         <Breadcrumb navItems={navItems} />
-        <PortfolioItems />
+        <div className="container flex flex-col items-center p-8 mx-auto shadow-md">
+            <div className="mt-4 flex items-center">
+            <PortfolioItems />
+            </div>
+            <div className="mt-4 flex flex-col items-center">
+                
+                <Button text="I read and write too..." />
+            </div>
+        </div>
+        <Footer />
         </>
-    )
+    );
 
 };
 

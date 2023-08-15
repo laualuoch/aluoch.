@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
 import image1 from  "../images/image-1.jpg";
-import image2 from "../images/image-2.jpg";
-import image3 from "../images/image-3.jpg";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const carouselsData = [
-  { src: image1, caption: 'Caption Text' },
-  { src: image2, caption: 'Caption Two' },
-  { src: image3, caption: 'Caption Three' },
+  { src: image1, caption: 'Caption Text', title:"flipCard Game", description:"A single player flipcard built using Bootsrap and React Js"},
+  { src: image1, caption: 'Caption Two', title:"dairyYetu", description:"An e-commerce site built using PHP(Laravel), and Bootstrap" },
+  { src: image1, caption: 'Caption Three', title:"aluoch.", description:"A professional portfolio designed in Figma and built using ReactJs and Tailwind CSS" },
 ];
 
 const Carousel = () => {
@@ -30,10 +28,10 @@ const Carousel = () => {
           >
            <div className="absolute bottom-0 px-2 md:px-4 py-2 md:py-3 bg-beige w-full flex justify-between">
             <div className="text-white font-regular font-chilanka font-regular text-sm md:text-xl">
-            <h1> DairyYetu</h1>
-            <p>A single player flipcard built using Bootsrap and React Js</p>
+            <h1>{carouselData.title}</h1>
+            <p>{carouselData.description}</p>
             <button className="bg-green hover:bg-pink text-white font-regular font-chilanka py-1 md:py-2 px-2 md:px-4 border border-blue-700 rounded">
-              </button>
+            </button>
             </div>
             <div className="flex items-center">
               <FontAwesomeIcon icon="fa-regular fa-coffee" />
@@ -44,7 +42,7 @@ const Carousel = () => {
             <img
               src={carouselData.src}
               alt={`Slide ${index + 1}`}
-              className="w-full"
+              className=" object-contain h-200 w-full"
             />
           </div>
         ))}
