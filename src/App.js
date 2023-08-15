@@ -7,13 +7,6 @@ import PortfolioPage from "./pages/Portfolio/PortfolioPage";
 import More from "./pages/More/More";
 import End from "./pages/End/End";
 
-
-const getCurrentYear = () => {
-  let year= new Date().getFullYear(); 
-  return year;
-
-}
-
 function App() {
   return (
     <div class="App">  
@@ -27,9 +20,6 @@ function App() {
             <Route path="/end" element={<End />} />
           </Routes>
         </div>
-      </section>
-
-      <section class="work-with-me">
       </section>
     </div>
   );
