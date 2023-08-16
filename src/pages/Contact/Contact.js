@@ -3,6 +3,7 @@ import Button from "../../components/Button";
 import Footer from "../../components/Footer";
 import NavBar from "../../components/Navbar";
 import ContactForm from "../../components/ContactForm";
+import Socials from "../../components/Socials";
 
 const Contact = () => {
     const navigate = useNavigate();
@@ -43,8 +44,11 @@ const Contact = () => {
                     <h2 class="mb-4 text-3xl lg:text-4xl tracking-tight font-chilanka font-extrabold text-beige">Contact.</h2>
                     <p class="font-light font-chilanka text-white sm:text-xl dark:text-gray-400">Let's Code the Future Together: Reach Out and Connect!</p>
                 </div> 
-                    <div className="flex flex-wrap justify-center w-full">
-                        <ContactForm />
+                <div>
+                    <Socials />
+                </div>
+                <div className="flex flex-wrap justify-center w-full">
+                    <ContactForm />
                 </div>
             </div>
         </section>

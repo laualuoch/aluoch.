@@ -11,9 +11,11 @@ const Icon = ({item}) => {
         
 }
 
-const NavBar = ({}) => {
-    iconItems = [
-        {item:"gitHub", icon: faGithubBrands, link:"https://github.com/aluoch-dev/"}
+const Socials = ({}) => {
+    const iconItems = [
+        {item:"gitHub", icon: faGithubBrands, link:"https://github.com/aluoch-dev/"},
+        {item:"medium", icon: faGithubBrands, link:"https://medium.com/@aluoch-laurine"},
+        {item:"linkedin", icon: faGithubBrands, link:"https://www.linkedin.com/in/aluoch-laurine/"}
     ];
     
     return (
@@ -30,4 +32,4 @@ const NavBar = ({}) => {
 }
 
 
-export default NavBar;
+export default Socials;
