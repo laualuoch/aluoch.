@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMedium, faLinkedin } from '@fortawesome/free-solid-svg-icons';
-import { faGithub as faGithubBrands } from '@fortawesome/free-brands-svg-icons';
+import { faGithub as faGithubBrands, faLinkedinIn, faMediumM } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
 
 const Icon = ({item}) => {
@@ -14,8 +13,8 @@ const Icon = ({item}) => {
 const Socials = ({}) => {
     const iconItems = [
         {item:"gitHub", icon: faGithubBrands, link:"https://github.com/aluoch-dev/"},
-        {item:"medium", icon: faGithubBrands, link:"https://medium.com/@aluoch-laurine"},
-        {item:"linkedin", icon: faGithubBrands, link:"https://www.linkedin.com/in/aluoch-laurine/"}
+        {item:"medium", icon: faMediumM, link:"https://medium.com/@aluoch-laurine"},
+        {item:"linkedin", icon: faLinkedinIn, link:"https://www.linkedin.com/in/aluoch-laurine/"}
     ];
     
     return (
