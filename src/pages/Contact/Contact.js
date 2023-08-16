@@ -37,19 +37,17 @@ const Contact = () => {
     return (
         <>
         <Breadcrumb navItems={navItems} />
-        <div className="flex flex-col h-screen items-center justify-center">
-            <div className="container mx-auto px-4">
-                <div className="flex items-center justify-center p-6 space-x-8">
-                    <div className="flex flex-col justify-center items-center justify-centerp-6">
-                        <h4 className="text-5xl text-beige font-chilanka font-bold mb-4">
-                            Thanks, for <span className="text-white">Visiting.</span>
-                        </h4>
+        <section>
+            <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+                <div class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
+                    <h2 class="mb-4 text-3xl lg:text-4xl tracking-tight font-chilanka font-extrabold text-beige">Contact.</h2>
+                    <p class="font-light font-chilanka text-white sm:text-xl dark:text-gray-400">Let's Code the Future Together: Reach Out and Connect!</p>
+                </div> 
+                    <div className="flex flex-wrap justify-center w-full">
                         <ContactForm />
-                    </div>
                 </div>
-                
             </div>
-        </div>
+        </section>
         <Footer />
         </>
     );    
