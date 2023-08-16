@@ -1,19 +1,11 @@
 import React, { useState } from 'react';
-import image1 from  "../images/aluoch-dev.png";
-import image2 from  "../images/heatmap.png";
-import image3 from  "../images/flipcard.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 import { faGithub as faGithubBrands } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
 
-const carouselsData = [
-  { src: image1, title:"aluoch.", description:"A professional portfolio designed in Figma and built using ReactJs and Tailwind CSS", hostingLink: "https://aluoch.vercel.app/", gitHubLink: "https://github.com/aluoch-dev/aluoch."},
-  { src: image2, title:"heatmap", description:"An implementation of the Google Heatmap Layer as a data visualization tool mapping patient data. Built using JavaScript.", gitHubLink: "https://github.com/aluoch-dev/heatMap"},
-  { src: image3, description:"A single player flipcard built using Bootsrap and React Js", hostingLink:"https://flippcard-app.vercel.app/", gitHubLink:"https://github.com/aluoch-dev/flipcard-game"}
-];
 
-const Carousel = () => {
+const Carousel = ({carouselsData}) => {
 
   const [slideIndex, setSlideIndex] = useState(0);
 
