@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom"
-import Breadcrumb from "../../components/Breadcrumb";
+import NavBar from "../../components/Navbar";
 import Carousel from "../../components/Carousel";
 import Footer from "../../components/Footer";
 import Button from "../../components/Button";
@@ -54,7 +54,7 @@ const Portfolio = () => {
 
     return (
         <>
-        <Breadcrumb navItems={navItems} />
+        <NavBar navItems={navItems} />
         <div className="container flex flex-col items-center p-8 mx-auto">
             <div className="mt-4 flex items-center">
             <PortfolioItems />

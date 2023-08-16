@@ -5,12 +5,11 @@ const Link = ({ item, itemOnClick}) => {
         <a href={itemOnClick} onClick={itemOnClick} className="inline-flex items-center p-2 text-lg text-beige border-green hover:text-white font-bold font-chilanka">
             {item}
         </a>
-        <span className="text-beige hover:text-white font-semibold font-chilanka">/</span>
         </>
     );
 }
 
-const Breadcrumb = ({navItems}) => {
+const NavBar = ({navItems}) => {
     
     return (
         <div className="container mx-auto px-4">
@@ -29,4 +28,4 @@ const Breadcrumb = ({navItems}) => {
 }
 
 
-export default Breadcrumb;
+export default NavBar;

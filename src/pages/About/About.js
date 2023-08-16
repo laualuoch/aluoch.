@@ -3,7 +3,7 @@ import Card from "../../components/Card";
 import Button from "../../components/Button";
 import { useNavigate } from "react-router-dom";
 import Footer from "../../components/Footer";
-import Breadcrumb from "../../components/Breadcrumb";
+import NavBar from "../../components/Navbar";
 
 const About = () => {
     const navigate = useNavigate();
@@ -43,7 +43,7 @@ const About = () => {
 
     return (
         <>
-        <Breadcrumb navItems={navItems}/>
+        <NavBar navItems={navItems}/>
         <section>
             <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
                 <div class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
