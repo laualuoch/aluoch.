@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const Icon = ({item}) => {
     return (
-        <FontAwesomeIcon icon={item} className="p-2 text-white text-xl cursor-pointer" />
+        <FontAwesomeIcon icon={item} className="p-2 text-beige text-xl cursor-pointer" />
     );
         
 }
