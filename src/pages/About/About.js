@@ -44,24 +44,28 @@ const About = () => {
     return (
         <>
         <Breadcrumb navItems={navItems}/>
-        <div className="flex flex-col h-screen justify-center">
-            <div className="container mx-auto px-4 flex flex-col items-center justify-center h-3/4">
-                <div className="flex flex-wrap justify-center w-full">
-                    {aboutItems.map(({ title, description, tools }) => (
-                        <Card
-                            key={title}
-                            title={title}
-                            description={description}
-                            tools={tools}
-                            className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 p-4"
-                        />
-                    ))}
-                </div>
-                <div className="flex justify-center mt-4">
+        <section>
+            <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+                <div class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
+                    <h2 class="mb-4 text-3xl lg:text-4xl tracking-tight font-chilanka font-extrabold text-beige">About</h2>
+                    <p class="font-light font-chilanka text-white sm:text-xl dark:text-gray-400">Crafting Code, Design, and Words: Bringing Innovation to Life</p>
+                </div> 
+                    <div className="flex flex-wrap justify-center w-full">
+                        {aboutItems.map(({ title, description, tools }) => (
+                            <Card
+                                key={title}
+                                title={title}
+                                description={description}
+                                tools={tools}
+                                className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 p-4"
+                            />
+                        ))}
+                    </div>
+                    <div className="flex justify-center mt-4">
                     <Button text="Portfolio" />
                 </div>
             </div>
-        </div>
+        </section>
         <Footer />
         </>
     );
