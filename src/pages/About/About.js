@@ -3,7 +3,7 @@ import Card from "../../components/Card";
 import Button from "../../components/Button";
 import { useNavigate } from "react-router-dom";
 import Footer from "../../components/Footer";
-import Breadcrumb from "../../components/Breadcrumb";
+import NavBar from "../../components/Navbar";
 
 const About = () => {
     const navigate = useNavigate();
@@ -43,11 +43,11 @@ const About = () => {
 
     return (
         <>
-        <Breadcrumb navItems={navItems}/>
+        <NavBar navItems={navItems}/>
         <section>
             <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
                 <div class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
-                    <h2 class="mb-4 text-3xl lg:text-4xl tracking-tight font-chilanka font-extrabold text-beige">About</h2>
+                    <h2 class="mb-4 text-3xl lg:text-4xl tracking-tight font-chilanka font-extrabold text-beige">About.</h2>
                     <p class="font-light font-chilanka text-white sm:text-xl dark:text-gray-400">Crafting Code, Design, and Words: Bringing Innovation to Life</p>
                 </div> 
                     <div className="flex flex-wrap justify-center w-full">

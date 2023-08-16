@@ -1,7 +1,9 @@
 import { useNavigate } from "react-router-dom";
 import Button from "../../components/Button";
 import Footer from "../../components/Footer";
-import Breadcrumb from "../../components/Breadcrumb";
+import NavBar from "../../components/Navbar";
+import ContactForm from "../../components/ContactForm";
+import Socials from "../../components/Socials";
 
 const Contact = () => {
     const navigate = useNavigate();
@@ -35,27 +37,21 @@ const Contact = () => {
 
     return (
         <>
-        <Breadcrumb navItems={navItems} />
-        <div className="flex flex-col h-screen items-center justify-center">
-            <div className="container mx-auto px-4">
-                <div className="flex items-center justify-center p-6 space-x-8">
-                    <div className="flex flex-col justify-center items-center justify-centerp-6">
-                        <h4 className="text-5xl text-beige font-chilanka font-bold mb-4">
-                            Thanks, for <span className="text-white">Visiting.</span>
-                        </h4>
-                        <h2 className="text-xl text-beige font-chilanka font font-semibold mb-4">
-                            This website was created using:
-                            TailwindCSS,
-                            ReactJs, and 
-                            Nodejs.
-                        </h2>
-                    </div>
-                </div>
-                <div className="flex justify-center p-6 mt-4 mb-4">
-                    <Button text="Say hi" />
+        <NavBar navItems={navItems} />
+        <section>
+            <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+                <div class="mx-auto max-w-screen-sm text-center">
+                    <h2 class="mb-4 text-3xl lg:text-4xl tracking-tight font-chilanka font-extrabold text-beige">Contact.</h2>
+                    <p class="font-light font-chilanka text-white sm:text-xl dark:text-gray-400">Let's Code the Future Together: Reach Out and Connect!</p>
+                </div> 
+                <div class="mx-auto max-w-screen-sm text-center lg:mb-8 mb-4">
+                    <Socials />
+                </div> 
+                <div className="flex flex-wrap justify-center w-full">
+                    <ContactForm />
                 </div>
             </div>
-        </div>
+        </section>
         <Footer />
         </>
     );    

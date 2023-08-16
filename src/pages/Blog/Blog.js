@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "../../components/Card";
-import Breadcrumb from "../../components/Breadcrumb";
+import NavBar from "../../components/Navbar";
 import { useNavigate } from "react-router-dom";
 import Button from "../../components/Button";
 import Footer from "../../components/Footer";
@@ -43,11 +43,11 @@ const Blog = () => {
 
     return (
         <>
-        <Breadcrumb navItems={navItems} />
+        <NavBar navItems={navItems} />
         <section>
             <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
                 <div class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
-                    <h2 class="mb-4 text-3xl lg:text-4xl tracking-tight font-chilanka font-extrabold text-beige">Blog</h2>
+                    <h2 class="mb-4 text-3xl lg:text-4xl tracking-tight font-chilanka font-extrabold text-beige">Blog.</h2>
                     <p class="font-light font-chilanka text-white sm:text-xl dark:text-gray-400">Exploring the Tech World One Line at a Time.</p>
                 </div> 
                 <div class="grid gap-8 lg:grid-cols-2">
