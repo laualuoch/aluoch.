@@ -5,9 +5,10 @@ import image3 from  "../images/flipcard.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 import { faGithub as faGithubBrands } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 
 const carouselsData = [
-  { src: image1, title:"aluoch.", description:"A professional portfolio designed in Figma and built using ReactJs and Tailwind CSS", hostingLink: "", gitHubLink: "https://github.com/aluoch-dev/aluoch."},
+  { src: image1, title:"aluoch.", description:"A professional portfolio designed in Figma and built using ReactJs and Tailwind CSS", hostingLink: "https://aluoch.vercel.app/", gitHubLink: "https://github.com/aluoch-dev/aluoch."},
   { src: image2, title:"heatmap", description:"An implementation of the Google Heatmap Layer as a data visualization tool mapping patient data. Built using JavaScript.", gitHubLink: "https://github.com/aluoch-dev/heatMap"},
   { src: image3, description:"A single player flipcard built using Bootsrap and React Js", hostingLink:"https://flippcard-app.vercel.app/", gitHubLink:"https://github.com/aluoch-dev/flipcard-game"}
 ];
@@ -33,8 +34,12 @@ const Carousel = () => {
               <div className="text-white font-regular font-chilanka font-regular text-sm md:text-xl">
                 <h1>{carouselData.title}</h1>
                 <p>{carouselData.description}</p>
-                <FontAwesomeIcon icon={faGithubBrands} className="p-2 text-white text-xl cursor-pointer" />
-                <FontAwesomeIcon icon={faLink} className="p-2 text-white text-xl cursor-pointer" />
+                <Link to={carouselData.gitHubLink}>
+                  <FontAwesomeIcon icon={faGithubBrands} className="p-2 text-white text-xl cursor-pointer" />
+                </Link>
+                <Link to={carouselData.hostingLink}>
+                  <FontAwesomeIcon icon={faLink} className="p-2 text-white text-xl cursor-pointer" />
+                </Link>
               </div>
             </div>
             <img
