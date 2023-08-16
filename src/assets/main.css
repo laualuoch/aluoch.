@@ -1095,16 +1095,8 @@ video {
     margin-bottom: 1rem;
   }
 
-  .lg\:h-auto {
-    height: auto;
-  }
-
   .lg\:w-1\/4 {
     width: 25%;
-  }
-
-  .lg\:w-auto {
-    width: auto;
   }
 
   .lg\:grid-cols-2 {
