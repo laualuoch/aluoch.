@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import Button from "../../components/Button";
 import Footer from "../../components/Footer";
 import Breadcrumb from "../../components/Breadcrumb";
+import ContactForm from "../../components/ContactForm";
 
 const Contact = () => {
     const navigate = useNavigate();
@@ -43,17 +44,10 @@ const Contact = () => {
                         <h4 className="text-5xl text-beige font-chilanka font-bold mb-4">
                             Thanks, for <span className="text-white">Visiting.</span>
                         </h4>
-                        <h2 className="text-xl text-beige font-chilanka font font-semibold mb-4">
-                            This website was created using:
-                            TailwindCSS,
-                            ReactJs, and 
-                            Nodejs.
-                        </h2>
+                        <ContactForm />
                     </div>
                 </div>
-                <div className="flex justify-center p-6 mt-4 mb-4">
-                    <Button text="Say hi" />
-                </div>
+                
             </div>
         </div>
         <Footer />
