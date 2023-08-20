@@ -1,4 +1,5 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import Card from "../../components/Card";
 import NavBar from "../../components/Navbar";
 import { useNavigate } from "react-router-dom";
@@ -36,10 +37,23 @@ const Blog = () => {
         {link:"Contact.", linkOnClick: navigateToEnd}
     ];
 
-    const blogData = [
-        {category: "Python", title: "Mastering Python Errors, Exceptions, and Exception Handling: A Comprehensive Guide - Part One", intro: "In the Tiobe Index Report as of 2023, Python is the most widely used programming language. This is considerably so given the simplicity and versatility of the language. Now, as a developer, it is important to build robust applications that are not only functional but also efficient."},
-        {category: "Python", title: "Mastering Python Errors, Exceptions, and Exception Handling: A Comprehensive Guide - Part Two", intro: "In the previous article, we mentioned that in Python programming, there are two distinguishable Errors; syntax errors and exceptions. In this article, we are going to explore exceptions, taking a dive into the different exceptions and how to handle them. "},
-        ];
+    const [blogData, setBlogData] = useState([{}]);
+
+    // const blogData = [
+    //     {category: "Python", title: "Mastering Python Errors, Exceptions, and Exception Handling: A Comprehensive Guide - Part One", intro: "In the Tiobe Index Report as of 2023, Python is the most widely used programming language. This is considerably so given the simplicity and versatility of the language. Now, as a developer, it is important to build robust applications that are not only functional but also efficient."},
+    //     {category: "Python", title: "Mastering Python Errors, Exceptions, and Exception Handling: A Comprehensive Guide - Part Two", intro: "In the previous article, we mentioned that in Python programming, there are two distinguishable Errors; syntax errors and exceptions. In this article, we are going to explore exceptions, taking a dive into the different exceptions and how to handle them. "},
+    //     ];
+
+    useEffect(()=> {
+        fetch('/blog').then(
+            res => res.json()
+        ).then(
+            blogData => {
+                setBlogData(blogData)
+                console.log(blogData)
+            }
+        )
+    }, [])
 
     return (
         <>

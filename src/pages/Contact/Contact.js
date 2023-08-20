@@ -1,3 +1,5 @@
+import React from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "../../components/Button";
 import Footer from "../../components/Footer";
@@ -34,6 +36,10 @@ const Contact = () => {
         {link:"Blog.", linkOnClick: navigateToMore},
         {link:"Contact.", linkOnClick: navigateToEnd}
     ];
+
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
 
     return (
         <>
