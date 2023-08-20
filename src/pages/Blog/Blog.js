@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import Button from "../../components/Button";
 import Footer from "../../components/Footer";
 import BlogCard from "../../components/BlogCard";
+import Loading from "../../components/Loading";
 
 const Blog = () => {
     const navigate = useNavigate();
@@ -60,14 +61,18 @@ const Blog = () => {
                     <p class="font-light font-chilanka text-white sm:text-xl dark:text-gray-400">Exploring the Tech World One Line at a Time.</p>
                 </div> 
                 <div class="grid gap-8 lg:grid-cols-2">
-                    {blogData.articles?.map(({key, category, title, intro, link}) => (
-                        <BlogCard
-                        key={key}
-                        category={category}
-                        title={title}
-                        intro={intro}
-                        link={link} />   
-                    ))}      
+                    {(typeof blogData.articles === 'undefined') ? (
+                        <Loading />
+                    ) : (
+                        blogData.articles?.map(({key, category, title, intro, link}) => (
+                            <BlogCard
+                            key={key}
+                            category={category}
+                            title={title}
+                            intro={intro}
+                            link={link} />   
+                        ))     
+                    )}                    
                 </div>  
             </div>
         </section>
