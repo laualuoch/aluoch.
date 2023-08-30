@@ -53,7 +53,7 @@ class ContactForm  extends React.Component {
 
         if(!this.state.email) {
             emailError = "Email must be provided!"
-        }else if(!isValidEmail) {
+        }else if(!isValidEmail(this.state.email )) {
             emailError = "Provide an email address"
         }
 
@@ -64,7 +64,7 @@ class ContactForm  extends React.Component {
         }
 
         if(nameError || emailError || messageError) {
-            this.setState({emailError, messageError})
+            this.setState({nameError, emailError, messageError})
             e.preventDefault()
         } else {
             alert(JSON.stringify(this.state))
@@ -80,7 +80,7 @@ class ContactForm  extends React.Component {
                         {this.state.nameError && <ErrorText text={this.state.nameError} /> }
                     </div>
                     <div className="w-1/2">
-                        <Input label="Email" type="email" value={this.state.email} onValueChange={this.handleEmailInputChange} />
+                        <Input label="Email" value={this.state.email} onValueChange={this.handleEmailInputChange} />
                         {this.state.emailError && <ErrorText text={this.state.emailError} /> }
                     </div>
                 </div>
