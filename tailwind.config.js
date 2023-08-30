@@ -20,7 +20,8 @@ module.exports = {
       black: '#000000',
       crayola:'#E83151',
       timberwolf: '#DBD4D3',
-      white: '#FFFFFF'
+      white: '#FFFFFF',
+      red: '#F72119'
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],

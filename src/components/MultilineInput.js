@@ -6,13 +6,12 @@ const MultilineInput = ({label, name, value, onValueChange}) => {
                 {label}
                 </label>
                 <textarea
-                id="message"
+                id={name}
                 name={name}
                 value={value}
                 onChange={onValueChange}
                 className="w-full p-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
                 rows="6"
-                required
                 />
 
         </>

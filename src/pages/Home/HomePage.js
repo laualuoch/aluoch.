@@ -4,6 +4,7 @@ import NavBar from "../../components/Navbar";
 import aluoch from "../../images/aluoch.jpg"
 import Footer from "../../components/Footer";
 import About from "../About/About";
+import InfoCard from "../../components/InfoCard";
 
 const HomePage = () => {
     const navigate = useNavigate();
@@ -35,6 +36,14 @@ const HomePage = () => {
         {link:"Contact.", linkOnClick: navigateToEnd}
     ];
 
+    const techStack = [
+        {text:"JavaScript", projects: "visit project"},
+        {text:"Reactjs", projects: "visit project"},
+        {link:"Nextjs", projects: "visit project"},
+        {link:"Python", projects: "visit project"},
+        {link:"Django", projects: "visit project"}
+    ];
+
     return (
         <>
         <NavBar navItems={navItems} />
@@ -58,14 +67,12 @@ const HomePage = () => {
                             writer. This online catalogue provides the different chapters of
                             my professional narrative.
                         </h2>
-                        <h2 className="text-lg lg:text-xl text-beige font-chilanka font-semibold mb-2 lg:mb-4">
-                            Outside of Work, I enjoy Reading (all sorts of books), and people-watching. I also 
-                            have a balcony garden that keeps me busy, sometimes watering or just watching the plants. 
-                        </h2>
+                        <div>
+                            {techStack.map((text) => {
+                                <InfoCard text={text} />
+                            })}
+                        </div>
                     </div>
-                </div>
-                <div className="flex justify-center p-6 mt-4 mb-4">
-                    <Button text="About" />
                 </div>
             </div>
         </div>
