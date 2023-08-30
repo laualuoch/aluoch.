@@ -37,10 +37,6 @@ const Contact = () => {
         {link:"Contact.", linkOnClick: navigateToEnd}
     ];
 
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
-
     return (
         <>
         <NavBar navItems={navItems} />
