@@ -2,6 +2,7 @@ import React from "react";
 import Button from "./Button";
 import Input from "./Input";
 import MultilineInput from "./MultilineInput";
+import ErrorText from "./ErrorText";
 
 class ContactForm  extends React.Component {
 
@@ -11,7 +12,10 @@ class ContactForm  extends React.Component {
         this.state = {
             name: "",
             email: "",
-            message: ""
+            message: "",
+            nameError: "",
+            emailError: "",
+            messageError: ""
         }
 
         this.handleNameInputChange = this.handleNameInputChange.bind(this)
@@ -21,19 +25,50 @@ class ContactForm  extends React.Component {
     }
 
     handleNameInputChange(e) {
-        this.setState({name: e.target.value})
+        this.setState({name: e.target.value, nameError: ""})
     }
 
     handleEmailInputChange(e) {
-        this.setState({email: e.target.value})
+        this.setState({email: e.target.value, emailError: ""})
     }
 
     handleMessageInputChange(e) {
-        this.setState({message: e.target.value})
+        this.setState({message: e.target.value, messageError: ""})
     }
 
     handleSubmit(e) {
-        alert(JSON.stringify(this.state))
+        var emailError = ""
+        var messageError = ""
+        var nameError = ""
+
+        function isValidEmail(email) {
+            return /\S+@\S+\.\S+/.test(email);
+        }
+
+        if(!this.state.name) {
+            nameError = "Name must be provided!"
+        } else if(this.state.name.length < 3) {
+            nameError = "Provide full name"
+        }
+
+        if(!this.state.email) {
+            emailError = "Email must be provided!"
+        }else if(!isValidEmail) {
+            emailError = "Provide an email address"
+        }
+
+        if(!this.state.message) {
+            messageError = "Message must be provided!"
+        } else if(this.state.message.length < 4) {
+            messageError = "Provide more information please"
+        }
+
+        if(nameError || emailError || messageError) {
+            this.setState({emailError, messageError})
+            e.preventDefault()
+        } else {
+            alert(JSON.stringify(this.state))
+        }
     }
     
     render () {
@@ -42,13 +77,16 @@ class ContactForm  extends React.Component {
                 <div className="mb-4 flex space-x-4">
                     <div className="w-1/2">
                         <Input label="Name" value={this.state.name} onValueChange={this.handleNameInputChange} />
+                        {this.state.nameError && <ErrorText text={this.state.nameError} /> }
                     </div>
                     <div className="w-1/2">
                         <Input label="Email" type="email" value={this.state.email} onValueChange={this.handleEmailInputChange} />
+                        {this.state.emailError && <ErrorText text={this.state.emailError} /> }
                     </div>
                 </div>
                 <div className="mb-4">
                     <MultilineInput label="Message" value={this.state.message} onValueChange={this.handleMessageInputChange}  />
+                    {this.state.messageError && <ErrorText text={this.state.messageError} />}
                 </div>
                 <div className="flex justify-center p-6 mt-4 mb-4">
                     <Button text="Submit" type="submit" />
