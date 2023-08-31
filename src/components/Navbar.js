@@ -11,18 +11,22 @@ const LinkItem = ({ item, itemOnClick}) => {
 const NavBar = ({navItems}) => {
     
     return (
-        <div className="container mx-auto px-4">
-            <ul class="py-3">
-                {navItems.map(({link, linkOnClick}) => {
-                    return (
-                        <LinkItem
-                            item={link}
-                            itemOnClick={linkOnClick}
-                        />
-                    );
-                })}
-            </ul>
-        </div>
+        <header className="bg-green">
+            <nav className="container mx-auto px-4 py-4 sticky top-0">
+                <div className="container mx-auto px-4">
+                    <ul class="py-3">
+                        {navItems.map(({link, linkOnClick}) => {
+                            return (
+                                <LinkItem
+                                    item={link}
+                                    itemOnClick={linkOnClick}
+                                />
+                            );
+                        })}
+                    </ul>
+                </div>
+            </nav>
+        </header>
     )
 }
 
