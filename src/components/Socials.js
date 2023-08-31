@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub as faGithubBrands, faLinkedinIn, faMediumM } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';

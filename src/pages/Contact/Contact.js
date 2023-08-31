@@ -1,42 +1,8 @@
 import React from "react";
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import Button from "../../components/Button";
-import Footer from "../../components/Footer";
-import NavBar from "../../components/Navbar";
 import ContactForm from "../../components/ContactForm";
 import Socials from "../../components/Socials";
 
 const Contact = () => {
-    const navigate = useNavigate();
-
-    const navigateToHome = () => {
-        navigate('/');
-    }
-
-    const navigateToAbout = () => {
-        navigate('/about');
-    }
-    const navigateToPortfolio = () => {
-        navigate('/portfolio');
-    }
-
-    const navigateToMore = () => {
-        navigate('/more');
-    }
-
-    const navigateToEnd = () => {
-        navigate('/end');
-    }
-
-    const navItems = [
-        {link:"Home.", linkOnClick: navigateToHome},
-        {link:"About.", linkOnClick: navigateToAbout},
-        {link:"Portfolio.", linkOnClick: navigateToPortfolio},
-        {link:"Blog.", linkOnClick: navigateToMore},
-        {link:"Contact.", linkOnClick: navigateToEnd}
-    ];
-
     return (
         <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
             <div class="mx-auto max-w-screen-sm text-center">

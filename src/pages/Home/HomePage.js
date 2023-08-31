@@ -1,41 +1,8 @@
-import { useNavigate } from "react-router";
-import Button from "../../components/Button";
-import NavBar from "../../components/Navbar";
+import React from "react";
 import aluoch from "../../images/aluoch.jpg"
-import Footer from "../../components/Footer";
-import About from "../About/About";
 import InfoCard from "../../components/InfoCard";
 
 const HomePage = () => {
-    const navigate = useNavigate();
-
-    const navigateToHome = () => {
-        navigate('/');
-    }
-
-    const navigateToAbout = () => {
-        navigate('/about');
-    }
-    const navigateToPortfolio = () => {
-        navigate('/portfolio');
-    }
-
-    const navigateToMore = () => {
-        navigate('/more');
-    }
-
-    const navigateToEnd = () => {
-        navigate('/end');
-    }
-
-    const navItems = [
-        {link:"Home.", linkOnClick: navigateToHome},
-        {link:"About.", linkOnClick: navigateToAbout},
-        {link:"Portfolio.", linkOnClick: navigateToPortfolio},
-        {link:"Blog.", linkOnClick: navigateToMore},
-        {link:"Contact.", linkOnClick: navigateToEnd}
-    ];
-
     const techStack = [
         {text:"JavaScript", projects: "visit project"},
         {text:"Reactjs", projects: "visit project"},

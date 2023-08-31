@@ -5,10 +5,6 @@ import { Routes, Route, BrowserRouter as Router} from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 import App from './App';
 import './assets/main.css';
-import About from './pages/About/About';
-import PortfolioPage from './pages/Portfolio/Portfolio';
-import Blog from './pages/Blog/Blog';
-import Contact from "./pages/Contact/Contact";
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
@@ -18,10 +14,6 @@ root.render(
     <Router>
       <Routes>
           <Route path="/" element={ <App /> } />
-          <Route path="/about" element={ <About /> } />
-          <Route path="/portfolio" element={<PortfolioPage />} />
-          <Route path="/more" element={<Blog />} />
-          <Route path="/end" element={<Contact />} />
         </Routes>
     </Router>
   </StrictMode>
