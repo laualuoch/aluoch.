@@ -29,7 +29,6 @@ const About = ({sectionId}) => {
                 </div>
             </div>
         </section>
-        
     );
     
 };

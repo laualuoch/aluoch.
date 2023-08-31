@@ -21,19 +21,11 @@ function App() {
   return (
     <>
     <NavBar navItems={navItems} />
-    <section>
-      <HomePage id="home" />
-    </section>
-      <About sectionId="about" />
-    <section>
-      <PortfolioPage id="portfolio" />
-    </section>
-    <section>
-      <Blog id="blog"/>
-    </section>
-    <section>
-      <Contact id="contact" />
-    </section>
+    <HomePage sectionId="home" />
+    <About sectionId="about" />
+    <PortfolioPage sectionId="portfolio" />
+    <Blog sectionId="blog"/>
+    <Contact sectionId="contact" />
     <Footer />
     </>
   );
