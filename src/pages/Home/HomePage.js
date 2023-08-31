@@ -45,8 +45,6 @@ const HomePage = () => {
     ];
 
     return (
-        <>
-        <NavBar navItems={navItems} />
         <div className="flex flex-col h-screen items-center justify-center">
             <div className="container mx-auto px-4">
                 <div className="flex flex-col lg:flex-row items-center justify-center p-6 space-x-8">
@@ -76,8 +74,6 @@ const HomePage = () => {
                 </div>
             </div>
         </div>
-        <Footer />
-        </>
     );    
 }
 

@@ -53,24 +53,18 @@ const Portfolio = () => {
     ];
 
     return (
-        <>
-        <NavBar navItems={navItems} />
-        <section>
-            <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-                <div class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
-                    <h2 class="mb-4 text-3xl lg:text-4xl tracking-tight font-chilanka font-extrabold text-beige">Portfolio.</h2>
-                    <p class="font-light font-chilanka text-white sm:text-xl dark:text-gray-400">Elevating Ideas Through Design and Innovation: Explore My Portfolio</p>
-                </div> 
-                    <div className="flex flex-wrap justify-center w-full">
-                        <PortfolioItems />
-                    </div>
-                    <div className="flex justify-center mt-4">
-                    <Button text="Portfolio" />
+        <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+            <div class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
+                <h2 class="mb-4 text-3xl lg:text-4xl tracking-tight font-chilanka font-extrabold text-beige">Portfolio.</h2>
+                <p class="font-light font-chilanka text-white sm:text-xl dark:text-gray-400">Elevating Ideas Through Design and Innovation: Explore My Portfolio</p>
+            </div> 
+                <div className="flex flex-wrap justify-center w-full">
+                    <PortfolioItems />
                 </div>
+                <div className="flex justify-center mt-4">
+                <Button text="Portfolio" />
             </div>
-        </section>
-        <Footer />
-        </>
+        </div>
     );
 
 };
