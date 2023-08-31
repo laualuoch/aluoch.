@@ -41,9 +41,19 @@ function App() {
   return (
     <div class="App">  
       <section>
-        <div class="Section">
-          < HomePage />
-        </div>
+        <HomePage />
+      </section>
+      <section>
+        <About />
+      </section>
+      <section>
+        <PortfolioPage />
+      </section>
+      <section>
+        <Blog />
+      </section>
+      <section>
+        <Contact />
       </section>
     </div>
   );
