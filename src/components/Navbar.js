@@ -11,8 +11,8 @@ const LinkItem = ({ item, itemOnClick}) => {
 const NavBar = ({navItems}) => {
     
     return (
-        <header className="bg-green">
-            <nav className="container mx-auto px-4 py-4 sticky top-0">
+        <header className="bg-green sticky top-0">
+            <nav className="container mx-auto px-4 py-4">
                 <div className="container mx-auto px-4">
                     <ul class="py-3">
                         {navItems.map(({link, linkOnClick}) => {
