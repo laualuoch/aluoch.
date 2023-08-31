@@ -7,6 +7,8 @@ import PortfolioPage from "./pages/Portfolio/Portfolio";
 import Blog from "./pages/Blog/Blog";
 import Contact from "./pages/Contact/Contact";
 import { Breadcrumb } from "react-bootstrap";
+import NavBar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
   const navigate = useNavigate();
@@ -39,13 +41,25 @@ function App() {
   ];
 
   return (
-    <div class="App">  
-      <section>
-        <div class="Section">
-          < HomePage />
-        </div>
-      </section>
-    </div>
+    <>
+    <NavBar navItems={navItems} />
+    <section>
+      <HomePage />
+    </section>
+    <section>
+      <About />
+    </section>
+    <section>
+      <PortfolioPage />
+    </section>
+    <section>
+      <Blog />
+    </section>
+    <section>
+      <Contact />
+    </section>
+    <Footer />
+    </>
   );
 }
 
