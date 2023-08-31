@@ -24,9 +24,7 @@ function App() {
     <section>
       <HomePage id="home" />
     </section>
-    <section>
-      <About id="about" />
-    </section>
+      <About sectionId="about" />
     <section>
       <PortfolioPage id="portfolio" />
     </section>

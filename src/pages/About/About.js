@@ -1,37 +1,7 @@
 import React from "react";
 import Card from "../../components/Card";
-import Button from "../../components/Button";
-import { useNavigate } from "react-router-dom";
 
-const About = () => {
-    const navigate = useNavigate();
-
-    const navigateToHome = () => {
-        navigate('/');
-    }
-
-    const navigateToAbout = () => {
-        navigate('/about');
-    }
-    const navigateToPortfolio = () => {
-        navigate('/portfolio');
-    }
-
-    const navigateToMore = () => {
-        navigate('/more');
-    }
-
-    const navigateToEnd = () => {
-        navigate('/end');
-    }
-
-    const navItems = [
-        {link:"Home.", linkOnClick: navigateToHome},
-        {link:"About.", linkOnClick: navigateToAbout},
-        {link:"Portfolio.", linkOnClick: navigateToPortfolio},
-        {link:"Blog.", linkOnClick: navigateToMore},
-        {link:"Contact.", linkOnClick: navigateToEnd}
-    ];
+const About = ({sectionId}) => {
 
     const aboutItems = [
         {title: "Software Engineering", description: "My approach to software engineering entails gathering user needs, designing solutions, testing designs, and developing. Followed by continuous iteration. I develop both Android and Web Apps", tools: ["HTML & CSS", "JavaScript", "React.js", "Python", "Kotlin", "Jetpack Compose"]},
@@ -40,12 +10,12 @@ const About = () => {
     ];
 
     return (
-        <section class="flex items-center justify-center h-screen">
+        <section id={sectionId} class="flex items-center justify-center h-screen">
             <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-            <div class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
-                <h2 class="mb-4 text-3xl lg:text-4xl tracking-tight font-chilanka font-extrabold text-beige">About.</h2>
-                <p class="font-light font-chilanka text-white sm:text-xl dark:text-gray-400">Crafting Code, Design, and Words: Bringing Innovation to Life</p>
-            </div> 
+                <div class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
+                    <h2 class="mb-4 text-3xl lg:text-4xl tracking-tight font-chilanka font-extrabold text-beige">About.</h2>
+                    <p class="font-light font-chilanka text-white sm:text-xl dark:text-gray-400">Crafting Code, Design, and Words: Bringing Innovation to Life</p>
+                </div> 
                 <div className="flex flex-wrap justify-center w-full">
                     {aboutItems.map(({ title, description, tools }) => (
                         <Card
@@ -57,10 +27,7 @@ const About = () => {
                         />
                     ))}
                 </div>
-                <div className="flex justify-center mt-4">
-                <Button text="Portfolio" />
             </div>
-        </div>
         </section>
         
     );
