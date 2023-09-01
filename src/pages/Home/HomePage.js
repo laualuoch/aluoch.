@@ -30,11 +30,14 @@ const HomePage = ({sectionId}) => {
                             <h2 className="text-lg lg:text-xl text-beige font-chilanka font-semibold mb-2 lg:mb-4">
                                 Welcome to the digital embodiment of my journey as a versatile
                                 software engineer, product designer and a skilled technical
-                                writer. This online catalogue provides the different chapters of
-                                my professional narrative.
+                                writer. I am <span className="text-white font-bold">currently looking for a new role </span>
+                                that will challenge me. I am also a part time student at
+                                <span className="text-white font-bold"> The University of East London </span>
+                                pursuing my <span className="text-white font-bold">Master's</span> in 
+                                <span className="text-white font-bold"> Computer Science</span>
                             </h2>
                             <div>
-                                {techStack.map((text) => {
+                                {techStack?.map((text) => {
                                     <InfoCard text={text} />
                                 })}
                             </div>
