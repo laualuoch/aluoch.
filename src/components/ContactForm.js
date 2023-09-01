@@ -96,7 +96,7 @@ class ContactForm  extends React.Component {
         const { loading } = this.state;
 
         return (
-            <form className="bg-green p-4 rounded-md" onSubmit={this.handleSubmit}>
+            <form className="bg-green rounded-md" onSubmit={this.handleSubmit}>
                 <div className="mb-4 flex space-x-4">
                     <div className="w-1/2">
                         <Input label="Name" name="name" value={this.state.name} onValueChange={this.handleNameInputChange} />

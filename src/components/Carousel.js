@@ -15,7 +15,7 @@ const Carousel = ({carouselsData}) => {
 
 
   return (
-    <div className="container mx-auto border border-green rounded-lg shadow-lg">
+    <div className="container mx-auto border p-6 rounded-lg border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
       <div className="relative w-full">
         {carouselsData.map((carouselData, index) => (
           <div
