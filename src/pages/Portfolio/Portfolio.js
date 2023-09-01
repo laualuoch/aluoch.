@@ -9,7 +9,7 @@ const PortfolioItems = () => {
     const carouselsData = [
         { src: image1, title:"aluoch.", description:"A professional portfolio designed in Figma and built using ReactJs and Tailwind CSS", hostingLink: "https://aluoch.vercel.app/", gitHubLink: "https://github.com/aluoch-dev/aluoch."},
         { src: image2, title:"heatmap", description:"An implementation of the Google Heatmap Layer as a data visualization tool mapping patient data. Built using JavaScript.", gitHubLink: "https://github.com/aluoch-dev/heatMap"},
-        { src: image3, description:"A single player flipcard built using Bootsrap and React Js", hostingLink:"https://flippcard-app.vercel.app/", gitHubLink:"https://github.com/aluoch-dev/flipcard-game"}
+        { src: image3, title: "flipcard", description:"A single player flipcard built using Bootsrap and React Js", hostingLink:"https://flippcard-app.vercel.app/", gitHubLink:"https://github.com/aluoch-dev/flipcard-game"}
       ];
       
 
