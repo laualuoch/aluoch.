@@ -47,8 +47,7 @@ const Blog = ({sectionId}) => {
                 </div>  
             </div>
         </section>
-    );
-    
+    ); 
 };
 
 export default Blog;
