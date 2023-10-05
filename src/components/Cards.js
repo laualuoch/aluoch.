@@ -1,6 +1,13 @@
-import InfoCard from "./InfoCard";
 
-const Card = ({title, description, tools}) => {
+
+export function InfoCard({text}) {
+    return (
+        <span class="bg-green text-white font-chilanka border border-white inline-block rounded-full px-3 py-1 text-sm font-regular  mr-2 mb-2">{text}</span>
+    );
+}
+
+
+export function Card({title, description, tools}) {
     return (
         <div class="max-w-sm rounded overflow-hidden shadow-lg border-spacing-1 p-5 m-3">
             <div class="px-6 py-4">
@@ -11,12 +18,10 @@ const Card = ({title, description, tools}) => {
             </div>
             <div class="px-6 pt-4 pb-2">
                 {tools?.map((text) => (
-                <InfoCard text={text} />
+                    <InfoCard text={text} />
                 ))}
             </div>
         </div>
 
     );
 }
-
-export default Card;
