@@ -1,6 +1,6 @@
 import React from "react";
 import aluoch from "../../images/aluoch.jpg"
-import InfoCard from "../../components/InfoCard";
+import { InfoCard } from "../../components/Cards";
 
 const HomePage = ({sectionId}) => {
     const techStack = [

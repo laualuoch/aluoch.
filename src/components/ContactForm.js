@@ -1,7 +1,6 @@
 import React from "react";
-import Button from "./Button";
-import Input from "./Input";
-import MultilineInput from "./MultilineInput";
+import Button from "./Buttons";
+import { Input, MultilineInput }from "./Inputs";
 import ErrorText from "./ErrorText";
 import emailjs from '@emailjs/browser';
 
