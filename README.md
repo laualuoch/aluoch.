@@ -1,4 +1,4 @@
-# Portfolio Page
+# Aluoch. Portfolio
 
 This is the GitHub repository for my portfolio page showcasing my UI/UX design and full-stack engineering skills. The portfolio page showcases my work and provides an overview of my professional background and expertise.
 
