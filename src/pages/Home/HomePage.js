@@ -14,10 +14,10 @@ const HomePage = ({sectionId}) => {
     ];
 
     return (
-        <section id={sectionId} class="flex items-center justify-center h-screen">
+        <section id={sectionId} class="flex items-center justify-center h-screen p-6">
             <div className="flex flex-col items-center justify-center">
-                <div className="container mx-auto px-4">
-                    <div className="flex flex-col lg:flex-row items-center justify-center p-6 space-x-8">
+                <div className="container mx-auto">
+                    <div className="flex flex-col lg:flex-row  md:flex-col sm:flex-col items-center justify-center p-6 space-x-8">
                         <div className="flex items-center justify-center">
                             <img
                                 className="object-contain h-1/4 w-1/4 mb-4 rounded-full"
