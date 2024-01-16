@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import HomePage from "./pages/Home/HomePage";
 import './assets/main.css'
 import About from "./pages/About/About";
