@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "./Buttons";
 import { Input, MultilineInput }from "./Inputs";
-import { ErrorText } from "./Text";
+import { ErrorText } from "./Texts";
 import emailjs from '@emailjs/browser';
 
 class ContactForm  extends React.Component {

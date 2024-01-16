@@ -27,7 +27,8 @@ module.exports = {
       sans: ['Graphik', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
       chilanka: ['Chilanka'],
-      nunito: ['Nunito']
+      nunito: ['Nunito'],
+      lato: ['Lato']
     },
     extend: {
       spacing: {
