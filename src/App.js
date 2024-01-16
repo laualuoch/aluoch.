@@ -10,11 +10,11 @@ import Footer from "./components/Footer";
 function App() {
  
     const navItems = [
-      {link:"Home.", linkOnClick: "#home"},
-      {link:"About.", linkOnClick: "#about"},
-      {link:"Portfolio.", linkOnClick: "#portfolio"},
-      {link:"Blog.", linkOnClick: "#blog"},
-      {link:"Contact.", linkOnClick: "#contact"}
+      {link:"HOME", linkOnClick: "#home"},
+      {link:"ABOUT", linkOnClick: "#about"},
+      {link:"PORTFOLIO", linkOnClick: "#portfolio"},
+      {link:"BLOG", linkOnClick: "#blog"},
+      {link:"CONTACT", linkOnClick: "#contact"}
   ];
 
   return (

@@ -2,7 +2,7 @@ import { HashLink as Link } from "react-router-hash-link";
 
 const LinkItem = ({ item, itemOnClick}) => {
     return (
-        <Link to={itemOnClick} smooth className="inline-flex items-center p-2 text-lg text-beige border-green hover:text-white font-bold font-chilanka">
+        <Link to={itemOnClick} smooth className="inline-flex items-center p-2 text-lg text-beige border-green hover:text-white font-lato">
             {item}
         </Link>
     );
