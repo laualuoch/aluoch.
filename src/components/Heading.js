@@ -11,7 +11,7 @@ const LinkItem = ({ item, itemOnClick}) => {
 
 const Socials = () => {
     return (
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-4 mb-6 md:justify-center sm:justify-center">
             <a href="https://www.linkedin.com/in/aluoch-laurine/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedinIn className="text-white text-2xl hover:text-pink" />
             </a>
@@ -32,7 +32,7 @@ const Socials = () => {
 const Intro = () => {
     return (
         <div className="flex items-center justify-center flex-col flex-wrap p-6">
-            <h6 className="p-4 font-lato text-white text-bold text-5xl md:text-3xl sm:text-xl hover:text-pink">LAURINE ALUOCH</h6>
+            <h6 className="p-4 font-lato text-white font-black text-5xl md:text-3xl sm:text-xl hover:text-pink">LAURINE ALUOCH</h6>
             <h5 className="p-4 font-lato text-white hover:text-pink">SOFTWARE ENGINEER | PRODUCT DESIGNER | TECHNICAL WRITER</h5>
         </div>
     );
@@ -46,7 +46,7 @@ const Navigation = ( {navItems}) => {
             </div>
 
             <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-                <div class="text-sm lg:flex-grow">
+                <div class="text-sm lg:flex-grow md:justify-center sm:justify-center">
                     {navItems.map(({link, linkOnClick}) => {
                           return (
                               <LinkItem
@@ -69,7 +69,7 @@ const Navigation = ( {navItems}) => {
 
 const Heading = ( {navItems}) => {
     return (
-        <header className="bg-green sticky top-0">
+        <header className="bg-green sticky top-0 shadow-md">
             <Intro />
             <Navigation navItems={navItems} />
         </header>
