@@ -1,10 +1,30 @@
 import { HashLink as Link } from "react-router-hash-link";
+import { FaMedium,  FaLinkedinIn, FaGithub, FaXTwitter } from "react-icons/fa6";
 
 const LinkItem = ({ item, itemOnClick}) => {
     return (
         <Link to={itemOnClick} smooth className="block mt-4 lg:inline-block lg:mt-0 text-beige p-2 text-lg hover:text-white font-lato">
             {item}
         </Link>
+    );
+}
+
+const Socials = () => {
+    return (
+        <div className="flex items-center space-x-4">
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                <FaLinkedinIn className="text-white text-2xl hover:text-pink" />
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+               <FaGithub className="text-white text-2xl hover:text-pink" />
+            </a>
+            <a href="https://medium.com/" target="_blank" rel="noopener noreferrer">
+                <FaMedium className="text-white text-2xl hover:text-pink" />
+            </a>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                <FaXTwitter className="text-white text-2xl hover:text-pink" />
+            </a>
+        </div>
     );
 }
 
@@ -23,9 +43,6 @@ const Navigation = ( {navItems}) => {
         <>
          <nav class="container mx-auto flex items-center justify-between flex-wrap">
             <div class="flex items-center flex-shrink-0 text-white mr-6">
-                {
-                    //Socials
-                }
             </div>
             <div class="block lg:hidden">
                 <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
@@ -44,16 +61,7 @@ const Navigation = ( {navItems}) => {
                       })}
                 </div>
                 <div>
-                {navItems.map(({link, linkOnClick}) => {
-                          return (
-                              <LinkItem
-                                  item={link}
-                                  itemOnClick={linkOnClick}
-                              />
-                          );
-                      })}
-
-                    <a href="#resp" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Download</a>
+                <Socials />
                 </div>
             </div>
         </nav>
