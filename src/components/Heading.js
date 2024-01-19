@@ -32,7 +32,7 @@ const Socials = () => {
 const Intro = () => {
     return (
         <div className="flex items-center justify-center flex-col flex-wrap p-6">
-            <h6 className="p-4 font-lato text-white font-black text-5xl md:text-3xl sm:text-xl hover:text-pink">LAURINE ALUOCH</h6>
+            <h6 className="p-4 font-lato text-white font-black text-bold text-5xl md:text-3xl sm:text-xl hover:text-pink">LAURINE ALUOCH</h6>
             <h5 className="p-4 font-lato text-white hover:text-pink">SOFTWARE ENGINEER | PRODUCT DESIGNER | TECHNICAL WRITER</h5>
         </div>
     );
@@ -46,12 +46,12 @@ const Navigation = ( {navItems}) => {
             </div>
 
             <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-                <div class="text-sm lg:flex-grow md:justify-center sm:justify-center">
+                <div class="text-sm lg:flex-grow lg:justify-start md:flex sm:flex md:justify-center sm:justify-center">
                     {navItems.map(({link, linkOnClick}) => {
                           return (
                               <LinkItem
-                                  item={link}
-                                  itemOnClick={linkOnClick}
+                              item={link}
+                              itemOnClick={linkOnClick}
                               />
                           );
                       })}
