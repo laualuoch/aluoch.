@@ -1,11 +1,11 @@
 import HomePage from "./pages/Home/HomePage";
-import './assets/main.css'
 import About from "./pages/About/About";
 import PortfolioPage from "./pages/Portfolio/Portfolio";
 import Blog from "./pages/Blog/Blog";
 import Contact from "./pages/Contact/Contact";
 import NavBar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Heading from "./components/Heading";
 
 function App() {
  
@@ -19,6 +19,7 @@ function App() {
 
   return (
     <>
+    <Heading navItems={navItems} />
     <NavBar navItems={navItems} />
     <HomePage sectionId="home" />
     <About sectionId="about" />
