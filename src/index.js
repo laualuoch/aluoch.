@@ -4,7 +4,7 @@ import { createRoot } from 'react-dom/client';
 import { Routes, Route, BrowserRouter as Router} from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 import App from './App';
-import './assets/main.css';
+import './assets/tailwind.css';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
