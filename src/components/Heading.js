@@ -11,7 +11,7 @@ const LinkItem = ({ item, itemOnClick}) => {
 
 const Socials = () => {
     return (
-        <div className="flex items-center space-x-4 mb-6 md:justify-center sm:justify-center">
+        <div className="flex items-center space-x-4 mb-6 md:justify-center sm:justify-center xs:justify-center">
             <a href="https://www.linkedin.com/in/aluoch-laurine/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedinIn className="text-white text-2xl hover:text-pink" />
             </a>
@@ -46,7 +46,7 @@ const Navigation = ( {navItems}) => {
             </div>
 
             <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-                <div class="text-sm lg:flex-grow md:justify-center sm:justify-center">
+                <div class="text-sm lg:flex-grow md:justify-center md:items-center sm:justify-center xm:items-center xs:justify-center xs:items-center">
                     {navItems.map(({link, linkOnClick}) => {
                           return (
                               <LinkItem
