@@ -12,16 +12,16 @@ const LinkItem = ({ item, itemOnClick}) => {
 const Socials = () => {
     return (
         <div className="flex items-center space-x-4">
-            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/aluoch-laurine/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedinIn className="text-white text-2xl hover:text-pink" />
             </a>
-            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/aluoch-dev" target="_blank" rel="noopener noreferrer">
                <FaGithub className="text-white text-2xl hover:text-pink" />
             </a>
-            <a href="https://medium.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://medium.com/@aluoch-laurine" target="_blank" rel="noopener noreferrer">
                 <FaMedium className="text-white text-2xl hover:text-pink" />
             </a>
-            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://twitter.com/aluoch_dev" target="_blank" rel="noopener noreferrer">
                 <FaXTwitter className="text-white text-2xl hover:text-pink" />
             </a>
         </div>
