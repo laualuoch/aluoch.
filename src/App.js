@@ -10,11 +10,11 @@ import { Router } from "react-router-dom";
 function App() {
  
     const navItems = [
-      {link:"HOME", linkOnClick: "#home"},
-      {link:"ABOUT", linkOnClick: "#about"},
-      {link:"PORTFOLIO", linkOnClick: "#portfolio"},
-      {link:"BLOG", linkOnClick: "#blog"},
-      {link:"CONTACT", linkOnClick: "#contact"}
+      {id: 1, link:"HOME", linkOnClick: "#home"},
+      {id: 2, link:"ABOUT", linkOnClick: "#about"},
+      {id: 3, link:"PORTFOLIO", linkOnClick: "#portfolio"},
+      {id: 4, link:"BLOG", linkOnClick: "#blog"},
+      {id: 5, link:"CONTACT", linkOnClick: "#contact"}
   ];
 
   return (

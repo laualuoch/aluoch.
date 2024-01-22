@@ -1,14 +1,6 @@
 import { HashLink as Link } from "react-router-hash-link";
 import { FaMedium,  FaLinkedinIn, FaGithub, FaXTwitter } from "react-icons/fa6";
 
-const LinkItem = ({ item, itemOnClick}) => {
-    return (
-        <Link to={itemOnClick} smooth className="inline-block lg:mt-0 text-beige p-2 text-lg hover:text-white font-lato">
-            {item}
-        </Link>
-    );
-}
-
 const Socials = () => {
     return (
         <div className="flex items-center space-x-4 mb-6 md:justify-center sm:justify-center xs:justify-center">
@@ -28,13 +20,20 @@ const Socials = () => {
     );
 }
 
-
 const Intro = () => {
     return (
         <div className="flex items-center justify-center flex-col flex-wrap p-6">
             <h6 className="p-4 font-lato text-white font-black text-5xl md:text-3xl sm:text-xl xs:text-lg hover:text-pink">LAURINE ALUOCH</h6>
             <h5 className="p-4 font-lato text-white hover:text-pink">SOFTWARE ENGINEER | PRODUCT DESIGNER | TECHNICAL WRITER</h5>
         </div>
+    );
+}
+
+const LinkItem = ({ item, itemOnClick}) => {
+    return (
+        <Link to={itemOnClick} smooth className="inline-block lg:mt-0 text-beige p-2 text-lg hover:text-white font-lato">
+            {item}
+        </Link>
     );
 }
 
@@ -69,7 +68,7 @@ const Navigation = ( {navItems}) => {
 
 const Heading = ( {navItems}) => {
     return (
-        <header className="bg-green sticky top-0 shadow-sm">
+        <header className="bg-green sticky top-0">
             <Intro />
             <Navigation navItems={navItems} />
         </header>
