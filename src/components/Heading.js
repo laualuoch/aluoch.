@@ -16,7 +16,7 @@ const Socials = () => {
                 <FaLinkedinIn className="text-white text-2xl hover:text-pink" />
             </a>
             <a href="https://github.com/aluoch-dev" target="_blank" rel="noopener noreferrer">
-               <FaGithub className="text-white text-2xl hover:text-pink" />
+               <FaGithub className="text-white text-2xl md:text-xl sm:text-lg xs:text- hover:text-pink" />
             </a>
             <a href="https://medium.com/@aluoch-laurine" target="_blank" rel="noopener noreferrer">
                 <FaMedium className="text-white text-2xl hover:text-pink" />
@@ -32,7 +32,7 @@ const Socials = () => {
 const Intro = () => {
     return (
         <div className="flex items-center justify-center flex-col flex-wrap p-6">
-            <h6 className="p-4 font-lato text-white font-black text-5xl md:text-3xl sm:text-xl hover:text-pink">LAURINE ALUOCH</h6>
+            <h6 className="p-4 font-lato text-white font-black text-5xl md:text-3xl sm:text-xl xs:text-lg hover:text-pink">LAURINE ALUOCH</h6>
             <h5 className="p-4 font-lato text-white hover:text-pink">SOFTWARE ENGINEER | PRODUCT DESIGNER | TECHNICAL WRITER</h5>
         </div>
     );

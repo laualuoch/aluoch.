@@ -581,6 +581,9 @@ video {
 .mb-5 {
   margin-bottom: 1.25rem;
 }
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -589,9 +592,6 @@ video {
 }
 .mr-2 {
   margin-right: 0.5rem;
-}
-.mr-4 {
-  margin-right: 1rem;
 }
 .mr-6 {
   margin-right: 1.5rem;
@@ -635,9 +635,6 @@ video {
 .h-56 {
   height: 14rem;
 }
-.h-8 {
-  height: 2rem;
-}
 .h-\[200px\] {
   height: 200px;
 }
@@ -664,9 +661,6 @@ video {
 }
 .w-4 {
   width: 1rem;
-}
-.w-8 {
-  width: 2rem;
 }
 .w-\[200px\] {
   width: 200px;
@@ -903,6 +897,10 @@ video {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -919,6 +917,9 @@ video {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
+.font-black {
+  font-weight: 900;
+}
 .font-bold {
   font-weight: 700;
 }
@@ -933,9 +934,6 @@ video {
 }
 .font-semibold {
   font-weight: 600;
-}
-.leading-none {
-  line-height: 1;
 }
 .tracking-tight {
   letter-spacing: -0.025em;
@@ -976,10 +974,6 @@ video {
   --tw-border-opacity: 1;
   border-color: rgb(252 186 177 / var(--tw-border-opacity));
 }
-.hover\:border-white:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
 .hover\:bg-jungle:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(209 206 189 / var(--tw-bg-opacity));
@@ -987,10 +981,6 @@ video {
 .hover\:bg-pink:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(252 186 177 / var(--tw-bg-opacity));
-}
-.hover\:bg-white:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 .hover\:text-pink:hover {
   --tw-text-opacity: 1;
@@ -1038,8 +1028,17 @@ video {
     flex-direction: column;
   }
 
+  .sm\:justify-center {
+    justify-content: center;
+  }
+
   .sm\:text-center {
     text-align: center;
+  }
+
+  .sm\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .sm\:text-xl {
@@ -1071,6 +1070,14 @@ video {
 
   .md\:flex-col {
     flex-direction: column;
+  }
+
+  .md\:items-center {
+    align-items: center;
+  }
+
+  .md\:justify-center {
+    justify-content: center;
   }
 
   .md\:space-x-3 > :not([hidden]) ~ :not([hidden]) {
@@ -1115,6 +1122,11 @@ video {
     padding-top: 2.5rem;
   }
 
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -1143,16 +1155,8 @@ video {
     margin-top: 0px;
   }
 
-  .lg\:inline-block {
-    display: inline-block;
-  }
-
   .lg\:flex {
     display: flex;
-  }
-
-  .lg\:hidden {
-    display: none;
   }
 
   .lg\:w-1\/4 {
