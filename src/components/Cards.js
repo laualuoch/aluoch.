@@ -49,3 +49,23 @@ export function BlogCard ({category, title, intro, link}) {
         </article>  
     );
 };
+
+
+export function PortfolioCard({title, description, tools}) {
+    return (
+        <div class="max-w-sm overflow-hidden shadow-lg border-spacing-1 p-6 m-3 bg-jungle rounded-lg">
+            <div class="px-6 py-4">
+                <div class="font-bold text-black font-lato text-xl mb-2">{ title }</div>
+                <p class="text-gray-700  font-lato text-base">
+                    { description }
+                </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+                {tools?.map((text) => (
+                    <InfoCard text={text} />
+                ))}
+            </div>
+        </div>
+
+    );
+}
