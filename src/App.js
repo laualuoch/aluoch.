@@ -5,6 +5,7 @@ import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import Heading from "./components/Heading";
+import { Router } from "react-router-dom";
 
 function App() {
  
@@ -18,13 +19,17 @@ function App() {
 
   return (
     <>
-    <Heading navItems={navItems} />
-    <Home sectionId="home" />
-    <About sectionId="about" />
-    <PortfolioPage sectionId="portfolio" />
-    <Blog sectionId="blog"/>
-    <Contact sectionId="contact" />
-    <Footer />
+    <div className="flex flex-col min-h-screen overflow-x-auto">
+      <Heading navItems={navItems} />
+      <div className="flex-1 p-8">
+        {/* <Home sectionId="home" />
+        <About sectionId="about" />
+        <PortfolioPage sectionId="portfolio" />
+        <Blog sectionId="blog"/>
+        <Contact sectionId="contact" /> */}
+      </div>
+      <Footer />
+    </div>   
     </>
   );
 }
