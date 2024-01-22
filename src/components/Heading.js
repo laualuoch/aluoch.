@@ -69,7 +69,7 @@ const Navigation = ( {navItems}) => {
 
 const Heading = ( {navItems}) => {
     return (
-        <header className="bg-green sticky top-0 shadow-md">
+        <header className="bg-green sticky top-0 shadow-sm">
             <Intro />
             <Navigation navItems={navItems} />
         </header>

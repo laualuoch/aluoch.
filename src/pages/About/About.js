@@ -11,11 +11,11 @@ const About = ({sectionId}) => {
     ];
 
     return (
-        <section id={sectionId} class="flex items-center justify-center h-screen">
-            <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+        <section id={sectionId} className="flex items-center justify-center h-screen">
+            <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
                 <SectionHeader 
                 title="ABOUT"
-                headerText="Crafting Code, Design, and Words: Bringing Innovation to Life"
+                description="Crafting Code, Design, and Words: Bringing Innovation to Life"
                 />
                 <div className="flex flex-wrap justify-center w-full">
                     {aboutItems.map(({ title, description, tools }) => (
