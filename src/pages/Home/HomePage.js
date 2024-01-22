@@ -19,11 +19,11 @@ const HomePage = ({sectionId}) => {
                 <div className="container mx-auto">
                     <div className="flex flex-col lg:flex-row  md:flex-col sm:flex-col items-center justify-center p-6 space-x-8">
                         <div className="flex items-center justify-center">
-                            <img
+                            {/* <img
                                 className="object-contain h-1/4 w-1/4 mb-4 rounded-full"
                                 src={aluoch}
                                 alt="intro-image"
-                            />
+                            /> */}
                         </div>
                         <div className="flex flex-col justify-center">
                             <h4 className="text-3xl lg:text-5xl text-beige font-chilanka font-bold mb-2 lg:mb-4">
