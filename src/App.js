@@ -1,8 +1,8 @@
-import HomePage from "./pages/Home/HomePage";
-import About from "./pages/About/About";
-import PortfolioPage from "./pages/Portfolio/Portfolio";
-import Blog from "./pages/Blog/Blog";
-import Contact from "./pages/Contact/Contact";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import PortfolioPage from "./pages/Portfolio";
+import Blog from "./pages/Blog";
+import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import Heading from "./components/Heading";
 
@@ -19,7 +19,7 @@ function App() {
   return (
     <>
     <Heading navItems={navItems} />
-    <HomePage sectionId="home" />
+    <Home sectionId="home" />
     <About sectionId="about" />
     <PortfolioPage sectionId="portfolio" />
     <Blog sectionId="blog"/>

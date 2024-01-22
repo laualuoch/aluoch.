@@ -1,8 +1,7 @@
 import React from "react";
-import aluoch from "../../images/aluoch.jpg"
-import { InfoCard } from "../../components/Cards";
+import { InfoCard } from "../components/Cards";
 
-const HomePage = ({sectionId}) => {
+const Home = ({sectionId}) => {
     const techStack = [
         {text:"JavaScript", projects: "visit project"},
         {text:"Reactjs", projects: "visit project"},
@@ -48,4 +47,4 @@ const HomePage = ({sectionId}) => {
     );    
 }
 
-export default HomePage;
+export default Home;

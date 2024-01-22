@@ -1,6 +1,6 @@
 import React from "react";
-import { BlogCard } from "../../components/Cards";
-import { SectionHeader } from "../../components/SectionHeader";
+import { BlogCard } from "../components/Cards";
+import { SectionHeader } from "../components/SectionHeader";
 
 const Blog = ({sectionId}) => {
 

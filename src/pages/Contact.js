@@ -1,7 +1,7 @@
 import React from "react";
-import ContactForm from "../../components/ContactForm";
-import Socials from "../../components/Socials";
-import { SectionHeader } from "../../components/SectionHeader";
+import ContactForm from "../components/ContactForm";
+import Socials from "../components/Socials";
+import { SectionHeader } from "../components/SectionHeader";
 
 const Contact = ({ sectionId }) => {
     return (
