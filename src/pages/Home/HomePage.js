@@ -14,11 +14,11 @@ const HomePage = ({sectionId}) => {
     ];
 
     return (
-        <section id={sectionId} class="flex items-center justify-center h-screen p-6">
+        <section id={sectionId} class="flex items-center justify-center p-6">
             <div className="flex flex-col items-center justify-center">
                 <div className="container mx-auto">
                     <div className="flex flex-col lg:flex-row  md:flex-col sm:flex-col items-center justify-center p-6 space-x-8">
-                        <div className="flex flex-col justify-center w-3/4">
+                        <div className="flex flex-col justify-center items-center w-3/4">
                             <h4 className="text-3xl lg:text-5xl text-beige font-lato font-bold mb-2 lg:mb-4">
                                 Hi, I'm <span className="text-white">Aluoch.</span>
                             </h4>

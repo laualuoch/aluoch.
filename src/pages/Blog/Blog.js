@@ -10,7 +10,7 @@ const Blog = ({sectionId}) => {
     ]
 
     return (
-        <section id={sectionId} className="flex items-center justify-center h-screen">
+        <section id={sectionId} className="flex items-center justify-center">
             <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
                 <SectionHeader
                 title="BLOG"
