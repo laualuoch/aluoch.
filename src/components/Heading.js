@@ -29,15 +29,19 @@ const Intro = () => {
     );
 }
 
-const LinkItem = ({ label, link}) => {
+const LinkItem = ({ label, link, active}) => {
     return (
-        <Link to={link} smooth className="inline-block lg:mt-0 text-beige p-2 text-lg hover:text-white font-lato">
+        <Link 
+        to={link} 
+        smooth 
+        className={`inline-block lg:mt-0 text-beige p-2 text-lg hover:text-white font-lato ${active ? 'text-pink-500 underline' : ''}`}
+        >
             {label}
         </Link>
     );
 }
 
-const Navigation = ( {navItems, onSelectItem }) => {
+const Navigation = ( {navItems, activeItem }) => {
     return (
         <>
          <nav class="container mx-auto flex items-center justify-between flex-wrap">
@@ -52,7 +56,7 @@ const Navigation = ( {navItems, onSelectItem }) => {
                               key={item.id}
                               label={item.label}
                               link={item.link}
-                              onClick={() => onSelectItem(item.id)}
+                              active={activeItem === item.id}
                               />
                           );
                       })}
@@ -67,11 +71,11 @@ const Navigation = ( {navItems, onSelectItem }) => {
 }
 
 
-const Heading = ( {navItems, onSelectItem}) => {
+const Heading = ( {navItems}) => {
     return (
         <header className="bg-green sticky top-0">
             <Intro />
-            <Navigation navItems={navItems} onSelectItem={onSelectItem} />
+            <Navigation navItems={navItems} />
         </header>
 
     );
