@@ -11,9 +11,6 @@ const Contact = ({ sectionId }) => {
                 title="CONTACT"
                 description="Let's Code the Future Together: Reach Out and Connect!"
                 />
-                <div className="mx-auto max-w-screen-sm text-center lg:mb-8 mb-4">
-                    <Socials />
-                </div> 
                 <div className="flex flex-wrap justify-center w-full">
                     <ContactForm />
                 </div>
