@@ -29,15 +29,15 @@ const Intro = () => {
     );
 }
 
-const LinkItem = ({ item, itemOnClick}) => {
+const LinkItem = ({ label, targetLink}) => {
     return (
-        <Link to={itemOnClick} smooth className="inline-block lg:mt-0 text-beige p-2 text-lg hover:text-white font-lato">
-            {item}
+        <Link to={targetLink} smooth className="inline-block lg:mt-0 text-beige p-2 text-lg hover:text-white font-lato">
+            {label}
         </Link>
     );
 }
 
-const Navigation = ( {navItems}) => {
+const Navigation = ( {navItems, onSelectItem }) => {
     return (
         <>
          <nav class="container mx-auto flex items-center justify-between flex-wrap">
@@ -46,11 +46,13 @@ const Navigation = ( {navItems}) => {
 
             <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
                 <div class="text-sm lg:flex-grow md:justify-center md:items-center sm:justify-center xm:items-center xs:justify-center xs:items-center">
-                    {navItems.map(({link, linkOnClick}) => {
+                    {navItems.map((item) => {
                           return (
                               <LinkItem
-                                  item={link}
-                                  itemOnClick={linkOnClick}
+                              key={item.id}
+                              label={item.label}
+                              targetId={item.id}
+                              onClick={() => onSelectItem(item.id)}
                               />
                           );
                       })}
@@ -66,11 +68,11 @@ const Navigation = ( {navItems}) => {
 }
 
 
-const Heading = ( {navItems}) => {
+const Heading = ( {navItems, onSelectItem}) => {
     return (
         <header className="bg-green sticky top-0">
             <Intro />
-            <Navigation navItems={navItems} />
+            <Navigation navItems={navItems} onSelectItem={onSelectItem} />
         </header>
 
     );
