@@ -53,7 +53,7 @@ export function BlogCard ({category, title, intro, link}) {
 
 export function AboutCard({title, description, tools}) {
     return (
-        <div class="max-w-sm overflow-hidden shadow-lg border-spacing-1 p-6 m-3 bg-jungle rounded-lg">
+        <div class="max-w-sm overflow-hidden shadow-lg border-spacing-1 p-6 m-3 rounded-lg hover:bg-jungle">
             <div class="px-6 py-4">
                 <div class="font-bold text-black font-lato text-xl mb-2">{ title }</div>
                 <p class="text-gray-700  font-lato text-base">
