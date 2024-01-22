@@ -9,10 +9,10 @@ export function InfoCard({text}) {
 
 export function PortfolioCard({title, description, tools}) {
     return (
-        <div class="max-w-sm rounded overflow-hidden shadow-lg border-spacing-1 p-5 m-3">
+        <div class="max-w-sm rounded-3xl overflow-hidden shadow-lg hover:bg-jungle border-spacing-1 p-5 m-3">
             <div class="px-6 py-4">
-                <div class="font-bold text-beige font-chilanka text-xl mb-2">{ title }</div>
-                <p class="text-gray-700  font-chilanka text-base">
+                <div class="font-bold text-beige font-lato text-xl mb-2">{ title }</div>
+                <p class="text-gray-700  font-lato text-base">
                     { description }
                 </p>
             </div>
