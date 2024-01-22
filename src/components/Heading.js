@@ -29,9 +29,9 @@ const Intro = () => {
     );
 }
 
-const LinkItem = ({ label, targetLink}) => {
+const LinkItem = ({ label, link}) => {
     return (
-        <Link to={targetLink} smooth className="inline-block lg:mt-0 text-beige p-2 text-lg hover:text-white font-lato">
+        <Link to={link} smooth className="inline-block lg:mt-0 text-beige p-2 text-lg hover:text-white font-lato">
             {label}
         </Link>
     );
@@ -51,7 +51,7 @@ const Navigation = ( {navItems, onSelectItem }) => {
                               <LinkItem
                               key={item.id}
                               label={item.label}
-                              targetId={item.id}
+                              link={item.link}
                               onClick={() => onSelectItem(item.id)}
                               />
                           );
@@ -63,7 +63,6 @@ const Navigation = ( {navItems, onSelectItem }) => {
             </div>
         </nav>
         </>
-
     )
 }
 

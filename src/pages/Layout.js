@@ -21,16 +21,6 @@ function Layout() {
       <Heading navItems={navItems} onSelectItem={setPageContent} />
       <div className="flex-1 p-8">
         <Outlet />
-        {/* <Home sectionId='home' />
-        <About sectionId='about' />
-        <PortfolioPage sectionId='portfolio' />
-        <Blog sectionId='blog' />
-        <Contact sectionId='contact' /> */}
-        {/* {pageContent === 'home' && <Home sectionId='home' />}
-        {pageContent === 'about' &&  <About sectionId='about' />}
-        {pageContent === 'portfolio' && <PortfolioPage sectionId='portfolio' />}
-        {pageContent === 'blog' && <Blog sectionId='blog' />}
-        {pageContent === 'contact' &&  <Contact sectionId='contact' /> } */}
       </div>
       <Footer />
     </div>   
