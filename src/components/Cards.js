@@ -7,7 +7,7 @@ export function InfoCard({text}) {
 }
 
 
-export function Card({title, description, tools}) {
+export function PortfolioCard({title, description, tools}) {
     return (
         <div class="max-w-sm rounded overflow-hidden shadow-lg border-spacing-1 p-5 m-3">
             <div class="px-6 py-4">
@@ -51,7 +51,7 @@ export function BlogCard ({category, title, intro, link}) {
 };
 
 
-export function PortfolioCard({title, description, tools}) {
+export function AboutCard({title, description, tools}) {
     return (
         <div class="max-w-sm overflow-hidden shadow-lg border-spacing-1 p-6 m-3 bg-jungle rounded-lg">
             <div class="px-6 py-4">

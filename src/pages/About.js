@@ -1,5 +1,5 @@
 import React from "react";
-import { Card } from "../components/Cards";
+import { AboutCard, Card } from "../components/Cards";
 import { SectionHeader } from "../components/SectionHeader";
 
 const About = ({sectionId}) => {
@@ -19,7 +19,7 @@ const About = ({sectionId}) => {
                 />
                 <div className="flex flex-wrap justify-center w-full">
                     {aboutItems.map(({ title, description, tools }) => (
-                        <Card
+                        <AboutCard
                             key={title}
                             title={title}
                             description={description}
