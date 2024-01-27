@@ -23,7 +23,7 @@ const Socials = () => {
 const Intro = () => {
     return (
         <div className="flex items-center justify-center flex-col flex-wrap p-6">
-            <h6 className="p-4 font-lato text-white font-black text-5xl md:text-3xl sm:text-xl xs:text-lg hover:text-pink">Laurine Aluoch</h6>
+            <h6 className="p-4 font-sans text-white font-bold text-5xl md:text-3xl sm:text-xl xs:text-lg hover:text-pink">Laurine Aluoch</h6>
         </div>
     );
 }
