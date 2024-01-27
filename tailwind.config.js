@@ -24,11 +24,7 @@ module.exports = {
       red: '#F72119'
     },
     fontFamily: {
-      sans: ['Graphik', 'sans-serif'],
-      serif: ['Merriweather', 'serif'],
-      chilanka: ['Chilanka'],
-      nunito: ['Nunito'],
-      lato: ['Lato']
+      sans: ['Nunito Sans', 'sans-serif'],
     },
     extend: {
       spacing: {
