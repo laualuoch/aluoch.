@@ -569,6 +569,9 @@ video {
 .grid {
   display: grid;
 }
+.h-1\/4 {
+  height: 25%;
+}
 .h-4 {
   height: 1rem;
 }
@@ -577,6 +580,9 @@ video {
 }
 .w-1\/2 {
   width: 50%;
+}
+.w-1\/4 {
+  width: 25%;
 }
 .w-3\/4 {
   width: 75%;
@@ -685,6 +691,9 @@ video {
 .bg-green {
   --tw-bg-opacity: 1;
   background-color: rgb(153 184 165 / var(--tw-bg-opacity));
+}
+.object-contain {
+  object-fit: contain;
 }
 .p-2 {
   padding: 0.5rem;
