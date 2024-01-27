@@ -9,11 +9,11 @@ import Contact from "./Contact"
 
 function Layout() {
   const navItems = [
-    { id: "home", label: "HOME", link: "/" },
-    { id: "about", label: "ABOUT", link: "/about" },
-    { id: "portfolio", label: "PORTFOLIO", link: "/portfolio" },
-    { id: "blog", label: "BLOG", link: "/blog" },
-    { id: "contact", label: "CONTACT", link: "/contact" },
+    { id: "home", label: "HOME", link: "/", section: "#home" },
+    { id: "about", label: "ABOUT", link: "/about", section: "#about" },
+    { id: "portfolio", label: "PORTFOLIO", link: "/portfolio", section: "#portfolio" },
+    { id: "blog", label: "BLOG", link: "/blog", section: "#blog" },
+    { id: "contact", label: "CONTACT", link: "/contact", section: "#contact" },
   ];
 
   return (

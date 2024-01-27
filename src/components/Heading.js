@@ -34,7 +34,7 @@ const LinkItem = ({ label, link, active}) => {
         <Link 
         to={link} 
         smooth 
-        className={`inline-block lg:mt-0 text-beige p-2 text-lg hover:text-white font-lato ${active ? 'text-pink-500 underline' : ''}`}
+        className={`inline-block lg:mt-0 p-2 text-lg hover:text-white font-lato ${active ? 'text-pink-500 underline' : 'text-beige '}`}
         >
             {label}
         </Link>
@@ -55,7 +55,7 @@ const Navigation = ( {navItems, activeItem }) => {
                               <LinkItem
                               key={item.id}
                               label={item.label}
-                              link={item.link}
+                              link={item.section}
                               active={activeItem === item.id}
                               />
                           );
