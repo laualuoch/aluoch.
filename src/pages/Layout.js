@@ -1,6 +1,11 @@
 import { Outlet } from "react-router-dom";
 import Footer from "../components/Footer";
 import Heading from "../components/Heading";
+import Home from "./Home";
+import About from "./About"
+import Portfolio from "./Portfolio"
+import Blog from "./Blog"
+import Contact from "./Contact"
 
 function Layout() {
   const navItems = [
@@ -13,10 +18,14 @@ function Layout() {
 
   return (
     <>
-      <div className="flex flex-col min-h-screen overflow-x-auto">
+      <div className="flex flex-col min-h-screen">
         <Heading navItems={navItems} />
-        <div className="flex-1 p-8">
-          <Outlet />
+        <div className="flex-1 flex-row p-8 overflow-x-auto">
+          <Home sectionId="home" />
+          <About sectionId="about" />
+          <Portfolio sectionId="portfolio" />
+          <Blog sectionId="blog" />
+          <Contact sectionId="contact" />
         </div>
         <Footer />
       </div>
