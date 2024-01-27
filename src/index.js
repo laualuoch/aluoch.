@@ -3,7 +3,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
-import Layout from "./sections/Layout";
+import Layout from "./Layout";
 import "./assets/tailwind.css";
 
 export default function App() {

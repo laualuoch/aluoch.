@@ -1,10 +1,10 @@
-import Footer from "../components/Footer";
-import Heading from "../components/Heading";
-import Home from "./Home";
-import About from "./About"
-import Portfolio from "./Portfolio"
-import Blog from "./Blog"
-import Contact from "./Contact"
+import Footer from "./components/Footer";
+import Heading from "./components/Heading";
+import Home from "./sections/Home";
+import About from "./sections/About"
+import Portfolio from "./sections/Portfolio"
+import Blog from "./sections/Blog"
+import Contact from "./sections/Contact"
 
 function Layout() {
   const navItems = [
