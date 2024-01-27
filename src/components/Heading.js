@@ -1,22 +1,14 @@
 import { HashLink as Link } from "react-router-hash-link";
 import { FaMedium,  FaLinkedinIn, FaGithub, FaXTwitter } from "react-icons/fa6";
 
-const LinkItem = ({ item, itemOnClick}) => {
-    return (
-        <Link to={itemOnClick} smooth className="inline-block lg:mt-0 text-beige p-2 text-lg hover:text-white font-lato">
-            {item}
-        </Link>
-    );
-}
-
 const Socials = () => {
     return (
-        <div className="flex items-center space-x-4 mb-6 md:justify-center sm:justify-center">
+        <div className="flex items-center space-x-4 mb-6 md:justify-center sm:justify-center xs:justify-center">
             <a href="https://www.linkedin.com/in/aluoch-laurine/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedinIn className="text-white text-2xl hover:text-pink" />
             </a>
             <a href="https://github.com/aluoch-dev" target="_blank" rel="noopener noreferrer">
-               <FaGithub className="text-white text-2xl hover:text-pink" />
+               <FaGithub className="text-white text-2xl md:text-xl sm:text-lg xs:text- hover:text-pink" />
             </a>
             <a href="https://medium.com/@aluoch-laurine" target="_blank" rel="noopener noreferrer">
                 <FaMedium className="text-white text-2xl hover:text-pink" />
@@ -28,17 +20,29 @@ const Socials = () => {
     );
 }
 
-
 const Intro = () => {
     return (
         <div className="flex items-center justify-center flex-col flex-wrap p-6">
+            <h6 className="p-4 font-lato text-white font-black text-5xl md:text-3xl sm:text-xl xs:text-lg hover:text-pink">LAURINE ALUOCH</h6>
             <h6 className="p-4 font-lato text-white font-black text-bold text-5xl md:text-3xl sm:text-xl hover:text-pink">LAURINE ALUOCH</h6>
             <h5 className="p-4 font-lato text-white hover:text-pink">SOFTWARE ENGINEER | PRODUCT DESIGNER | TECHNICAL WRITER</h5>
         </div>
     );
 }
 
-const Navigation = ( {navItems}) => {
+const LinkItem = ({ label, link, active}) => {
+    return (
+        <Link 
+        to={link} 
+        smooth 
+        className={`inline-block lg:mt-0 p-2 text-lg hover:text-white font-lato ${active ? 'text-pink-500 underline' : 'text-beige '}`}
+        >
+            {label}
+        </Link>
+    );
+}
+
+const Navigation = ( {navItems, activeItem }) => {
     return (
         <>
          <nav class="container mx-auto flex items-center justify-between flex-wrap">
@@ -46,12 +50,14 @@ const Navigation = ( {navItems}) => {
             </div>
 
             <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-                <div class="text-sm lg:flex-grow lg:justify-start md:flex sm:flex md:justify-center sm:justify-center">
-                    {navItems.map(({link, linkOnClick}) => {
+                <div class="text-sm lg:flex-grow md:justify-center md:items-center sm:justify-center xm:items-center xs:justify-center xs:items-center">
+                    {navItems.map((item) => {
                           return (
                               <LinkItem
-                              item={link}
-                              itemOnClick={linkOnClick}
+                              key={item.id}
+                              label={item.label}
+                              link={item.section}
+                              active={activeItem === item.id}
                               />
                           );
                       })}
@@ -62,14 +68,13 @@ const Navigation = ( {navItems}) => {
             </div>
         </nav>
         </>
-
     )
 }
 
 
 const Heading = ( {navItems}) => {
     return (
-        <header className="bg-green sticky top-0 shadow-md">
+        <header className="bg-green sticky top-0">
             <Intro />
             <Navigation navItems={navItems} />
         </header>
