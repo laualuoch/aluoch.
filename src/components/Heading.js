@@ -47,8 +47,9 @@ const Navigation = ( {navItems, activeItem }) => {
             <div class="flex items-center flex-shrink-0 text-white mr-6">
             </div>
 
+
             <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-                <div class="text-sm lg:flex-grow md:justify-center md:items-center sm:justify-center xm:items-center xs:justify-center xs:items-center">
+                <div class="flex lg:flex-grow md:justify-center md:items-center sm:justify-center xm:items-center xs:justify-center xs:items-center text-sm ">
                     {navItems.map((item) => {
                           return (
                               <LinkItem

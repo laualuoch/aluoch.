@@ -29,7 +29,7 @@ const Home = ({sectionId}) => {
                         </div>
                         <div className="flex flex-col justify-center items-center w-3/4">
                             <p className="text-lg lg:text-xl text-beige font-sans mb-2 lg:mb-4">
-                                I am a user-centric sofwtare engineer who enjoys crafting solutions 
+                                I am a user-centric software engineer who enjoys crafting solutions 
                                 with the end user in mind. I am a naturally observant and empathtic 
                                 individual, making the process quite straightforward. 
                             </p>

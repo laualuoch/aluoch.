@@ -7,9 +7,15 @@ export function InfoCard({text}) {
 }
 
 
-export function PortfolioCard({title, description, tools}) {
+export function PortfolioCard({title, description, tools, image} ) {
     return (
-        <div class="max-w-sm rounded-3xl overflow-hidden shadow-lg hover:bg-jungle border-spacing-1 p-5 m-3">
+        <div class="max-w-sm overflow-hidden shadow-lg hover:bg-jungle border-spacing-1 p-5 m-3">
+            <div className="">
+                <img
+                src={image}
+                alt=""
+                />
+            </div>
             <div class="px-6 py-4">
                 <div class="font-bold text-beige font-lato text-xl mb-2">{ title }</div>
                 <p class="text-gray-700  font-lato text-base">
