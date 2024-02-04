@@ -1,4 +1,4 @@
-import React, { createContext, useContext} from "react";
+import React, { createContext, useState } from "react";
 import Footer from "./components/Footer";
 import Heading from "./components/Heading";
 import Home from "./sections/Home";
