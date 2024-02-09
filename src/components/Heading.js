@@ -23,7 +23,7 @@ const Socials = () => {
 const Intro = () => {
     return (
         <div className="flex items-center justify-center flex-col flex-wrap p-6">
-            <h6 className="p-4 font-lato text-white font-black text-5xl md:text-3xl sm:text-xl xs:text-lg hover:text-pink">Laurine Aluoch</h6>
+            <h6 className="p-4 font-sans text-white font-bold text-5xl md:text-3xl sm:text-xl xs:text-lg hover:text-pink">Laurine Aluoch</h6>
         </div>
     );
 }
@@ -47,8 +47,9 @@ const Navigation = ( {navItems, activeItem }) => {
             <div class="flex items-center flex-shrink-0 text-white mr-6">
             </div>
 
+
             <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-                <div class="text-sm lg:flex-grow md:justify-center md:items-center sm:justify-center xm:items-center xs:justify-center xs:items-center">
+                <div class="flex lg:flex-grow md:justify-center md:items-center sm:justify-center xm:items-center xs:justify-center xs:items-center text-sm ">
                     {navItems.map((item) => {
                           return (
                               <LinkItem

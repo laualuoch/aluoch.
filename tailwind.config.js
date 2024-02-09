@@ -24,7 +24,7 @@ module.exports = {
       red: '#F72119'
     },
     fontFamily: {
-      sans: ['Nunito Sans', 'sans-serif'],
+      sans: ['Nunito Sans'],
     },
     extend: {
       spacing: {

@@ -1,3 +1,4 @@
+import React, { createContext, useState } from "react";
 import Footer from "./components/Footer";
 import Heading from "./components/Heading";
 import Home from "./sections/Home";
@@ -6,7 +7,13 @@ import Portfolio from "./sections/Portfolio"
 import Blog from "./sections/Blog"
 import Contact from "./sections/Contact"
 
+const ThemeContext = createContext();
+
+
 function Layout() {
+
+  const [theme, setTheme ] = useState('light');
+
   const navItems = [
     { id: "home", label: "HOME", link: "/", section: "#home" },
     { id: "about", label: "ABOUT", link: "/about", section: "#about" },
@@ -16,7 +23,7 @@ function Layout() {
   ];
 
   return (
-    <>
+    <ThemeContext.Provider value={{ theme, setTheme }}>
       <div className="flex flex-col min-h-screen">
         <Heading navItems={navItems} />
         <div className="flex-1 flex-row p-8 overflow-x-auto">
@@ -28,7 +35,7 @@ function Layout() {
         </div>
         <Footer />
       </div>
-    </>
+    </ThemeContext.Provider>
   );
 }
 

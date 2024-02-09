@@ -34,7 +34,7 @@ html,
   line-height: 1.5; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */ /* 3 */
   tab-size: 4; /* 3 */
-  font-family: Nunito Sans, sans-serif; /* 4 */
+  font-family: Nunito Sans; /* 4 */
   font-feature-settings: normal; /* 5 */
   font-variation-settings: normal; /* 6 */
   -webkit-tap-highlight-color: transparent; /* 7 */
@@ -384,6 +384,9 @@ video {
 [hidden] {
   display: none;
 }
+    html {
+      font-family: "Nunito Sans";
+    }
 
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
@@ -668,9 +671,6 @@ video {
 .rounded {
   border-radius: 0.25rem;
 }
-.rounded-3xl {
-  border-radius: 1.5rem;
-}
 .rounded-full {
   border-radius: 9999px;
 }
@@ -769,6 +769,9 @@ video {
 .text-end {
   text-align: end;
 }
+.font-sans {
+  font-family: Nunito Sans;
+}
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -796,9 +799,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-.font-black {
-  font-weight: 900;
 }
 .font-bold {
   font-weight: 700;
