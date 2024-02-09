@@ -17,16 +17,20 @@ module.exports = {
     extend: {
       colors: {
         light: {
-          primary: '#007bff',
-          secondary: '#6c757d',
-          background: '#fafafa',
-          text: '#212529',
+          primary: '#FFC0CB',
+          secondary: '#FFB6C1',
+          accent: '#FF69B4',
+          baby: '#FFD9E6',
+          background: '#FFFFFF',
+          text: '#333333'
         },
         dark: {
-          primary: '#28a745',
-          secondary: '#ffffff',
-          background: '#171c21',
-          text: '#f8f9fa',
+          primary: '#001F3F',
+          secondary: '#003366',
+          accent: '#005b96',
+          baby: '#0077b6',
+          background: '#111111',
+          text: '#CCCCCC'
         },
       },
       spacing: {
