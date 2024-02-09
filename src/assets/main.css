@@ -704,9 +704,6 @@ video {
 .p-4 {
   padding: 1rem;
 }
-.p-5 {
-  padding: 1.25rem;
-}
 .p-6 {
   padding: 1.5rem;
 }
@@ -768,6 +765,9 @@ video {
 }
 .text-end {
   text-align: end;
+}
+.font-nunito {
+  font-family: Nunito;
 }
 .font-sans {
   font-family: Nunito Sans;
