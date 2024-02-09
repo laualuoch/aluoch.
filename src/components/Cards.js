@@ -10,43 +10,35 @@ export function InfoCard({text}) {
 
 export function PortfolioCard({title, description, tools, image, hostingLink, githubLink} ) {
     return (
-        <div class="max-w-sm overflow-hidden shadow-lg rounded border-spacing-1 p-5 m-3">
-            <div className="">
-                <img
-                src={image}
-                alt=""
-                />
-            </div>
-            <div class="px-6 py-4">
-                <div class="font-bold text-beige font-lato text-xl mb-2">{ title }</div>
-                <p class="text-gray-700  font-lato text-base">
-                    { description }
-                </p>
-            </div>
-            <div class="px-6 pt-4 pb-2">
-                {tools?.map((text) => (
-                    <InfoCard text={text} />
-                ))}
-            </div>
-            <div class="flex justify-between items-center px-6 mb-4">
+        <div class="max-w-sm overflow-hidden shadow-lg rounded border-spacing-1 m-3">
+            <div className="flex justify-between items-center px-6 mb-4">
                 {!hostingLink ? 
                     <div>
                         {/* the link icon shouldnt be displayed */}
                     </div>
-                
                 : (
                     <a href={hostingLink} target="_blank" rel="noopener noreferrer">
                         <FaLink className="text-white text-2xl md:text-xl sm:text-lg xs:text- hover:text-pink" />
                     </a>
                 )}
-                
                 <a href={githubLink} target="_blank" rel="noopener noreferrer">
                     <FaGithub className="text-white text-2xl md:text-xl sm:text-lg xs:text- hover:text-pink" />
                 </a>
             </div>
+            <div className="">
+                <img src={image} alt="" />
+            </div>
+            <div className="px-6 py-4">
+                <div class="font-bold text-beige font-lato text-l mb-2">{ title }</div>
+                <p class="text-gray-700 font-nunito text-base">{ description }</p>
+            </div>
+            <div className="px-6 pt-4 pb-2">
+                {tools?.map((text) => (
+                    <InfoCard text={text} />
+                ))}
+            </div>
         </div>
-
-    );
+);
 }
 
 
@@ -58,7 +50,7 @@ export function BlogCard ({category, title, intro, link}) {
                         {category}
                     </span>
                 </div>
-                <h2 class="mb-2 text-2xl text-gray-200 font-lato font-bold">{title}</h2>
+                <h2 class="mb-5 text-2xl text-gray-200 text-center font-lato font-bold">{title}</h2>
                 <p class="mb-5 font-light text-gray-500 font-lato dark:text-gray-400">{intro}</p>
                 <div class="flex justify-between items-center">
                     <div class="flex items-center space-x-4">
