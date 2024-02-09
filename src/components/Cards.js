@@ -29,7 +29,7 @@ export function PortfolioCard({title, description, tools, image, hostingLink, gi
                 ))}
             </div>
             <div class="flex justify-between items-center px-6 mb-4">
-                {hostingLink ? 
+                {!hostingLink ? 
                     <div>
                         {/* the link icon shouldnt be displayed */}
                     </div>
