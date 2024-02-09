@@ -5,28 +5,30 @@ module.exports = {
     './src/**/*.{js,jsx,ts,tsx}'
   ],
   theme: {
+    fontFamily: {
+      sans: ['Nunito'],
+    },
     screens: {
       sm: '480px',
       md: '768px',
       lg: '976px',
       xl: '1440px',
     },
-    colors: {
-      green: '#99B8A5',
-      beige: '#E7E1C9',
-      jungle: '#D1CEBD',
-      pink: '#FCBAB1',
-      cream: '#F6EDDB',
-      black: '#000000',
-      crayola:'#E83151',
-      timberwolf: '#DBD4D3',
-      white: '#FFFFFF',
-      red: '#F72119'
-    },
-    fontFamily: {
-      sans: ['Nunito Sans'],
-    },
     extend: {
+      colors: {
+        light: {
+          primary: '#007bff',
+          secondary: '#6c757d',
+          background: '#fafafa',
+          text: '#212529',
+        },
+        dark: {
+          primary: '#28a745',
+          secondary: '#ffffff',
+          background: '#171c21',
+          text: '#f8f9fa',
+        },
+      },
       spacing: {
         '128': '32rem',
         '144': '36rem',
@@ -34,7 +36,11 @@ module.exports = {
       borderRadius: {
         '4xl': '2rem',
       }
-    }
+    },
+    variants: {
+      backgroundColor: ['dark', 'light'],
+      color: ['dark', 'light'],
+    },
   },
   plugins: []
 }
