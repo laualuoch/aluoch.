@@ -1,4 +1,5 @@
-
+import React from "react";
+import { FaLink, FaGithub} from "react-icons/fa6";
 
 export function InfoCard({text}) {
     return (
@@ -7,9 +8,9 @@ export function InfoCard({text}) {
 }
 
 
-export function PortfolioCard({title, description, tools, image} ) {
+export function PortfolioCard({title, description, tools, image, hostingLink, githubLink} ) {
     return (
-        <div class="max-w-sm overflow-hidden shadow-lg hover:bg-jungle border-spacing-1 p-5 m-3">
+        <div class="max-w-sm overflow-hidden shadow-lg rounded border-spacing-1 p-5 m-3">
             <div className="">
                 <img
                 src={image}
@@ -26,6 +27,22 @@ export function PortfolioCard({title, description, tools, image} ) {
                 {tools?.map((text) => (
                     <InfoCard text={text} />
                 ))}
+            </div>
+            <div class="flex justify-between items-center px-6 mb-4">
+                {hostingLink ? 
+                    <div>
+                        {/* the link icon shouldnt be displayed */}
+                    </div>
+                
+                : (
+                    <a href={hostingLink} target="_blank" rel="noopener noreferrer">
+                        <FaLink className="text-white text-2xl md:text-xl sm:text-lg xs:text- hover:text-pink" />
+                    </a>
+                )}
+                
+                <a href={githubLink} target="_blank" rel="noopener noreferrer">
+                    <FaGithub className="text-white text-2xl md:text-xl sm:text-lg xs:text- hover:text-pink" />
+                </a>
             </div>
         </div>
 
