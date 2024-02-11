@@ -12,17 +12,15 @@ export function PortfolioCard({title, description, tools, image, hostingLink, gi
     return (
         <div class="max-w-sm overflow-hidden shadow-lg rounded border-spacing-1 m-3">
             <div className="flex justify-between items-center px-6 mb-4">
-                {!hostingLink ? 
-                    <div>
-                        {/* the link icon shouldnt be displayed */}
-                    </div>
-                : (
-                    <a href={hostingLink} target="_blank" rel="noopener noreferrer">
-                        <FaLink className="text-white text-2xl md:text-xl sm:text-lg xs:text- hover:text-pink" />
+                <div>
+                    {hostingLink && (
+                        <a href={hostingLink} target="_blank" rel="noopener noreferrer">
+                        <FaLink className="text-black text-2xl md:text-xl sm:text-lg xs:text- hover:text-pink" />
                     </a>
-                )}
+                    )}
+                </div>
                 <a href={githubLink} target="_blank" rel="noopener noreferrer">
-                    <FaGithub className="text-white text-2xl md:text-xl sm:text-lg xs:text- hover:text-pink" />
+                    <FaGithub className="text-black text-2xl md:text-xl sm:text-lg xs:text- hover:text-pink" />
                 </a>
             </div>
             <div className="">
