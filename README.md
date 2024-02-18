@@ -35,10 +35,6 @@ The portfolio page is built using the following technologies:
   - Tailwind CSS
   - React.js
 
-- **Back-end**:
-  - Node.js
-  - MongoDB
-
 - **Additional Tools and Libraries**:
   - Git
   - Vercel App Hosting
