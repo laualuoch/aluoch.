@@ -13,7 +13,7 @@ const Icon = ({item}) => {
 const Socials = ({}) => {
     const iconItems = [
         {item:"gitHub", icon: faGithubBrands, link:"https://github.com/aluoch-dev/"},
-        {item:"medium", icon: faMediumM, link:"https://medium.com/@aluoch-laurine"},
+        {item:"medium", icon: faMediumM, link:"https://medium.com/@aluoch"},
         {item:"linkedin", icon: faLinkedinIn, link:"https://www.linkedin.com/in/aluoch-laurine/"}
     ];
     
