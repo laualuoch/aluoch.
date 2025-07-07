@@ -3,7 +3,7 @@
  * 
  */
 
-import style from './styles/globals.module.scss';
+import './styles/globals.scss';
 
 export const metadata = {
   title: 'Laurine A.',
@@ -17,12 +17,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <header className={style['header-bar']}>
-        <h1 className={style['header']}>Laurine A.</h1>
+      <header className='header-bar'>
+        <h1 className='header'>Laurine A.</h1>
       </header>
       <body>{children}</body>
-      <footer className={style['footer']}>
-        <span className={style['']}>Copyright@2025</span>
+      <footer className='footer'>
+        <span className='footer-'>Copyright@2025</span>
       </footer>
     </html>
   )
