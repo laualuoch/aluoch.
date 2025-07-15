@@ -4,6 +4,7 @@
  * 
  */
 
+import { Card } from './components/Card';
 import { Experience } from './sections/Experience';
 import style from './style.module.scss';
 
@@ -11,9 +12,9 @@ export default function Home() {
   return (
     <main className={style['main-section']}>
     <div className={style['section-one']}>
-      <div className={style['card']}>
-        <p>Experience</p>
-      </div>
+      <Card section="Experience">
+        <Experience />
+      </Card>
     </div>
 
     <div className={style['section-two']}>
