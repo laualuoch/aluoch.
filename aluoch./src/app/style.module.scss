@@ -1,0 +1,47 @@
+/**
+ *  Author: Aluoch L.
+ *  Copyright@2025
+ * 
+ */
+
+.main-section {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-one,
+.section-two {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  width: 100%;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+
+.card {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.section-five {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 0;
+}
+
+.skills-section,
+.contact-section,
+.projects-section {
+  @extend .card;
+}

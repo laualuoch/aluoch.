@@ -1,5 +1,6 @@
 /**
  *  Author: Aluoch L.
+ *  Copyright @ 2025
  * 
  */
 
@@ -17,13 +18,22 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <header className='header-bar'>
-        <h1 className='header'>Laurine A.</h1>
-      </header>
-      <body>{children}</body>
-      <footer className='footer'>
-        <span className='footer-'>Copyright@2025</span>
-      </footer>
+      <head>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet" />
+      </head>
+      <body>
+        <header className="header-bar">
+          <h1 className="header">Laurine A.</h1>
+        </header>
+
+        <main className="main-content">
+          {children}
+        </main>
+
+        <footer className="footer">
+          <span>Copyright © 2025</span>
+        </footer>
+      </body>
     </html>
   )
 }
