@@ -8,12 +8,12 @@ import { FC } from 'react';
 import style from './style.module.scss';
 import { Card } from '@/app/components/Card';
 
-export const Contact: FC = () => {
+export const Skills: FC = () => {
 
   return (
-    <Card section="Contact">
-      <div className={style['contact-body']}>
-        <p>Description about contact</p>
+    <Card section="Skills">
+      <div className={style['skills-body']}>
+        <p>Description about skills</p>
       </div>     
     </Card>
   )
